@@ -1,0 +1,92 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class edit1
+
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		
+		HashMap<String, Integer> hm = new HashMap<String, Integer>();		
+		ArrayList<String> finalwords = new ArrayList<String>();
+		int i=0,k=0;
+		
+		//reading stop words
+		ArrayList<String> stopwords = new ArrayList<String>();
+		String scurrline;
+		FileReader sw = new FileReader("D:\\User Libraries\\Documents\\NLP\\stopwords.txt");
+		BufferedReader br = new BufferedReader(sw);
+		while((scurrline=br.readLine())!=null)
+			stopwords.add(scurrline);
+		//System.out.println(stopwords);
+		
+		//reading the input file
+		String tmp;
+		ArrayList<String> words = new ArrayList<String>();
+		FileReader inpw = new FileReader("D:\\User Libraries\\Documents\\NLP\\input.txt");
+		BufferedReader br1 = new BufferedReader(inpw);
+		while((tmp=br1.readLine())!=null)
+		{
+			StringBuilder sb = new StringBuilder(tmp);
+			String[] tmpw = sb.toString().split("\\s");
+			for(String word : tmpw)
+			{
+				words.add(word);				
+			}
+		}
+		//System.out.println(words);
+			
+		//removing Stop Words
+		for(String word1 : words)
+		{
+			String wordCompare = word1.toLowerCase();
+			if(!stopwords.contains(wordCompare))
+			{
+				finalwords.add(wordCompare);
+				if(!hm.containsKey(wordCompare))
+				{
+					hm.put(wordCompare,i);
+					i++;
+				}
+			}
+		}
+		//System.out.println(finalwords);
+		
+		//generating matrix
+		int now=i;
+		ArrayList<ArrayList<Integer>> gmatrix = new ArrayList<ArrayList<Integer>>();
+		for(int a=0;a<now;a++)
+		{
+			ArrayList<Integer> temp1 = new ArrayList<Integer>();
+			for(int b=0;b<now;b++)
+			{
+				temp1.add(0);
+			}
+			gmatrix.add(temp1);
+		}
+		for(int x=0;x<finalwords.size();x++)
+		{
+			for(int y=x-5;y<=x+5;y++)
+			{
+				if(y>=0&&y<finalwords.size()&&y!=x)
+				{
+					int row = hm.get(finalwords.get(x));
+					int col = hm.get(finalwords.get(y));
+					gmatrix.get(row).set(col,1);
+				}
+			}
+		}
+		System.out.println(now);
+		for(int m=0;m<now-1;m++)
+		    System.out.print("'"+finalwords.get(m)+"'"+","+" ");
+		System.out.println("'"+finalwords.get(now-1)+"'");
+		for(int m=0;m<now;m++)
+		{
+			for(int n=0;n<now-1;n++)
+				System.out.print(gmatrix.get(m).get(n)+" ");
+			System.out.println(gmatrix.get(m).get(now-1)+";");
+		}		
+	}
+}
