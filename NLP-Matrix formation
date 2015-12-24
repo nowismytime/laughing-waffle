@@ -1,17 +1,16 @@
-/* package codechef; // don't place package name! */
-
+package Graphs;
 import java.util.*;
-import java.lang.*;
 import java.io.*;
-class edit1
+import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 
-{
+public class graphform {
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		
 		HashMap<String, Integer> hm = new HashMap<String, Integer>();		
 		ArrayList<String> finalwords = new ArrayList<String>();
-		int i=0,k=0;
+		ArrayList<String> finalwords1 = new ArrayList<String>();
+		int i=0;
+		MaxentTagger tagger = new MaxentTagger("taggers/english-left3words-distsim.tagger");
 		
 		//reading stop words
 		ArrayList<String> stopwords = new ArrayList<String>();
@@ -21,33 +20,67 @@ class edit1
 		while((scurrline=br.readLine())!=null)
 			stopwords.add(scurrline);
 		//System.out.println(stopwords);
+		br.close();
 		
 		//reading the input file
 		String tmp;
 		ArrayList<String> words = new ArrayList<String>();
+		ArrayList<String> words1 = new ArrayList<String>();
 		FileReader inpw = new FileReader("D:\\User Libraries\\Documents\\NLP\\input.txt");
 		BufferedReader br1 = new BufferedReader(inpw);
 		while((tmp=br1.readLine())!=null)
 		{
+			//System.out.println(tmp);			
 			StringBuilder sb = new StringBuilder(tmp);
 			String[] tmpw = sb.toString().split("\\s");
+			String tagged = tagger.tagString(tmp);
+			//System.out.println(tagged);
+			StringBuilder sb1 = new StringBuilder(tagged);
+			String[] tmpw1 = sb1.toString().split("\\s");
 			for(String word : tmpw)
 			{
-				words.add(word);				
+				StringBuilder ss = new StringBuilder();
+				for(int k=0;k<word.length();k++)
+				{
+					char c = word.charAt(k);
+					if(((c>='a')&&(c<='z'))||((c>='A')&&(c<='Z')))
+						ss.append(c);
+				}
+				word=ss.toString();
+				if(word.length()>0)
+				{
+					words.add(word);
+					//System.out.println(word);
+				}
+			}
+			for(String word : tmpw1)
+			{
+				if(word.length()>0)
+				{
+					char c = word.charAt(0);
+					if(((c>='a')&&(c<='z'))||((c>='A')&&(c<='Z')))
+					{
+						words1.add(word);
+						//System.out.println(word);
+					}
+				}				
 			}
 		}
 		//System.out.println(words);
-			
+		br1.close();
+		
 		//removing Stop Words
-		for(String word1 : words)
+		for(int k=0;k<words.size();k++)
 		{
-			String wordCompare = word1.toLowerCase();
+			String wordCompare = words.get(k).toLowerCase();
 			if(!stopwords.contains(wordCompare))
 			{
 				finalwords.add(wordCompare);
-				if(!hm.containsKey(wordCompare))
+				finalwords1.add(words1.get(k));
+				if(!hm.containsKey(words1.get(k)))
 				{
-					hm.put(wordCompare,i);
+					System.out.print("'"+words.get(k)+"'"+","+" ");
+					hm.put(words1.get(k),i);
 					i++;
 				}
 			}
@@ -72,16 +105,27 @@ class edit1
 			{
 				if(y>=0&&y<finalwords.size()&&y!=x)
 				{
-					int row = hm.get(finalwords.get(x));
-					int col = hm.get(finalwords.get(y));
-					gmatrix.get(row).set(col,1);
+					String a1 = finalwords1.get(x);
+					String a2 = finalwords1.get(y);
+					int x1;
+					for(x1=0;x1<a1.length();x1++)
+						if(a1.charAt(x1)=='_')
+							break;
+					int x2;
+					for(x2=0;x2<a2.length();x2++)
+						if(a2.charAt(x2)=='_')
+							break;
+					a1 = a1.substring(x1+1);
+					a2 = a2.substring(x2+1);
+					int row = hm.get(finalwords1.get(x));
+					int col = hm.get(finalwords1.get(y));
+					if(a1.equals(a2))
+						gmatrix.get(row).set(col,1);
 				}
 			}
 		}
-		System.out.println(now);
-		for(int m=0;m<now-1;m++)
-		    System.out.print("'"+finalwords.get(m)+"'"+","+" ");
-		System.out.println("'"+finalwords.get(now-1)+"'");
+		System.out.println();
+		System.out.println(now);		
 		for(int m=0;m<now;m++)
 		{
 			for(int n=0;n<now-1;n++)
