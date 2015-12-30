@@ -1,0 +1,37 @@
+package Graphs;
+import java.util.*;
+public class aggcluster extends disjointsets {
+	public static void clusterize (ArrayList<ArrayList<Integer>> geomatrix, HashMap<Integer, String> words)
+	{
+		// create disjoint sets for all elements
+		DisjointSets();
+		for(int i=0;i<words.size();i++)
+			SetCreate(words.get(i));
+		
+		while(disjointSet.size()>(words.size()/2))
+		{
+			int N = geomatrix.get(0).size();
+			int imin = -1;
+			int jmin = -1;
+			int min = 9999;
+			for(int i=0;i<N;i++)
+			{
+				for(int j=0;j<N;j++)
+				{
+					if(geomatrix.get(i).get(j)<min)
+					{
+						imin=i;
+						jmin=j;
+						min=geomatrix.get(i).get(j);
+					}
+				}
+			}
+			String first = words.get(imin);
+			String second = words.get(jmin);
+			
+			if(!(SetFind(first).equals(SetFind(second))))
+				union(first,second);
+		}
+	}
+
+}
