@@ -3,11 +3,12 @@ import java.util.*;
 import java.io.*;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 
-public class graphform extends floydwarshall{
+public class graphform extends disjointsets{
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		HashMap<String, Integer> hm = new HashMap<String, Integer>();
 		HashMap<Integer, String> hm1 = new HashMap<Integer, String>();
+		HashMap<String, Integer> hm2 = new HashMap<String, Integer>();
 		ArrayList<String> finalwords = new ArrayList<String>();
 		ArrayList<String> finalwords1 = new ArrayList<String>();
 		int i=0;
@@ -83,7 +84,8 @@ public class graphform extends floydwarshall{
 				{
 					//System.out.print("'"+words.get(k)+"'"+","+" ");
 					hm.put(words1.get(k),i);
-					hm1.put(i, words1.get(k));
+					hm1.put(i, words.get(k));
+					hm2.put(words.get(k),i);
 					i++;
 				}
 			}
@@ -140,8 +142,157 @@ public class graphform extends floydwarshall{
 		ArrayList<ArrayList<Integer>> geomatrix = flwa(gmatrix);
 		//System.out.println(geomatrix);
 		
+		//forming clusters
+		List<Map<String, Set<String>>> dset = clusterize(geomatrix, hm1,now);
 		
-		
+		//creating dot file
+		dotCreate(dset, hm2, gmatrix, hm1);	
+	}
 	
+	public static ArrayList<ArrayList<Integer>> flwa (ArrayList<ArrayList<Integer>> graph)
+	{
+		int N=graph.get(0).size();
+		ArrayList<ArrayList<Integer>> dist = new ArrayList<ArrayList<Integer>>();
+		for(int i=0;i<N;i++)
+		{
+			ArrayList<Integer> temp = new ArrayList<Integer>();
+			for(int j=0;j<N;j++)
+				temp.add(0);
+			dist.add(temp);
+		}
+		int i,j,k;
+		
+		for(i=0;i<N;i++)
+			for(j=0;j<N;j++)
+			{
+				if(i!=j&&graph.get(i).get(j)==0)
+					dist.get(i).set(j, 9999);
+				else
+					dist.get(i).set(j, graph.get(i).get(j));
+			}
+		
+		for(k=0;k<N;k++)
+			for(i=0;i<N;i++)
+				for(j=0;j<N;j++)
+				{
+					if(dist.get(i).get(k)+dist.get(k).get(j)<dist.get(i).get(j))
+						dist.get(i).set(j, dist.get(i).get(k)+dist.get(k).get(j));
+				}
+		
+		/*for(i=0;i<N;i++)
+			for(j=0;j<N;j++)
+				if(dist.get(i).get(j)==9999)
+					dist.get(i).set(j, 0);*/
+		
+		return dist;
+	}
+	
+	
+	public static List<Map<String, Set<String>>> clusterize (ArrayList<ArrayList<Integer>> geomatrix, HashMap<Integer, String> words, int now)
+	{
+		// create disjoint sets for all elements
+		DisjointSets();
+		for(int i=0;i<words.size();i++)
+			SetCreate(words.get(i));
+		while(disjointSet.size()>80)
+		{
+			//System.out.println(x);
+			int N = geomatrix.get(0).size();
+			int imin = -1;
+			int jmin = -1;
+			int min = 9999;
+			for(int i=0;i<N;i++)
+			{
+				for(int j=0;j<N;j++)
+				{
+					if(geomatrix.get(i).get(j)!=0&&geomatrix.get(i).get(j)<min)
+					{
+						imin=i;
+						jmin=j;
+						min=geomatrix.get(i).get(j);
+					}
+				}
+			}
+			String first = words.get(imin);
+			String second = words.get(jmin);
+			geomatrix.get(imin).set(jmin,9999);
+			
+			if(!(SetFind(first).equals(SetFind(second))))
+				union(first,second);
+		}
+		
+		/*for(int i=0;i<disjointSet.size();i++)
+		{
+			Map<String, Set<String>> map = disjointSet.get(i);
+			Set<String> keySet = map.keySet();
+			
+			for(String key : keySet)
+			{
+				System.out.println(key);
+				Set<String> set = map.get(key);
+				for(String element: set)
+					System.out.print(element+" ");
+				System.out.println();
+			}
+			System.out.println(i);
+		}*/
+		return disjointSet;
+	}
+
+	public static void dotCreate(List<Map<String, Set<String>>> disjointSet, HashMap<String, Integer> hm, ArrayList<ArrayList<Integer>> gmatrix, HashMap<Integer, String> hm1) throws IOException
+	{
+		int N = gmatrix.get(0).size();
+		File file = new File("test.dot");
+		file.createNewFile();
+		FileWriter writer = new FileWriter(file);
+		writer.write("Graph {\n");
+		writer.write("subgraph[style=invis];\n");
+	    writer.write("\n");
+	    int z=0;
+	    for(int i=0;i<disjointSet.size();i++)
+	    {	    	
+	    	Map<String, Set<String>> map = disjointSet.get(i);
+			Set<String> keySet = map.keySet();			
+			for(String key : keySet)
+			{
+				Set<String> set = map.get(key);
+				if(set.size()>1)
+				{
+					writer.write("subgraph cluster_"+z+"{\n");
+					z++;
+					/*if(z%2==0)
+						writer.write("node [style=filled];\n");*/
+					ArrayList<String> newset = new ArrayList<String>();
+					Iterator<String> it = set.iterator();
+					while(it.hasNext())
+					{
+						newset.add(it.next());
+					}
+					//System.out.println(newset.size()==set.size());
+					for(int a=0;a<newset.size()-1;a++)
+					{
+						for(int b=a+1;b<newset.size();b++)
+						{
+							int x = hm.get(newset.get(a));
+							int y = hm.get(newset.get(b));
+							gmatrix.get(x).set(y, 0);
+							writer.write("  "+newset.get(a)+" -- "+newset.get(b)+";\n");
+						}
+					}
+					writer.write("}\n");
+				}
+			}			
+	    }
+	    for(int i=0;i<N;i++)
+		{
+			for(int j=0;j<N;j++)
+			{
+				if(gmatrix.get(i).get(j)==1)
+					writer.write("  "+hm1.get(i)+" -- "+hm1.get(j)+";\n");
+			}
+		}
+	    writer.write("}\n");
+	    writer.flush();
+	    writer.close();
 	}
 }
