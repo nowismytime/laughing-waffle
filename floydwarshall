@@ -1,0 +1,41 @@
+package Graphs;
+import java.util.*;
+public class floydwarshall {	
+	public static ArrayList<ArrayList<Integer>> flwa (ArrayList<ArrayList<Integer>> graph)
+	{
+		int N=graph.get(0).size();
+		ArrayList<ArrayList<Integer>> dist = new ArrayList<ArrayList<Integer>>();
+		for(int i=0;i<N;i++)
+		{
+			ArrayList<Integer> temp = new ArrayList<Integer>();
+			for(int j=0;j<N;j++)
+				temp.add(0);
+			dist.add(temp);
+		}
+		int i,j,k;
+		
+		for(i=0;i<N;i++)
+			for(j=0;j<N;j++)
+			{
+				if(i!=j&&graph.get(i).get(j)==0)
+					dist.get(i).set(j, 9999);
+				else
+					dist.get(i).set(j, graph.get(i).get(j));
+			}
+		
+		for(k=0;k<N;k++)
+			for(i=0;i<N;i++)
+				for(j=0;j<N;j++)
+				{
+					if(dist.get(i).get(k)+dist.get(k).get(j)<dist.get(i).get(j))
+						dist.get(i).set(j, dist.get(i).get(k)+dist.get(k).get(j));
+				}
+		
+		/*for(i=0;i<N;i++)
+			for(j=0;j<N;j++)
+				if(dist.get(i).get(j)==9999)
+					dist.get(i).set(j, 0);*/
+		
+		return dist;
+	}
+}
