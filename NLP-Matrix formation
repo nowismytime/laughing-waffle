@@ -3,10 +3,11 @@ import java.util.*;
 import java.io.*;
 import edu.stanford.nlp.tagger.maxent.MaxentTagger;
 
-public class graphform {
+public class graphform extends floydwarshall{
 	public static void main (String[] args) throws java.lang.Exception
 	{
-		HashMap<String, Integer> hm = new HashMap<String, Integer>();		
+		HashMap<String, Integer> hm = new HashMap<String, Integer>();
+		HashMap<Integer, String> hm1 = new HashMap<Integer, String>();
 		ArrayList<String> finalwords = new ArrayList<String>();
 		ArrayList<String> finalwords1 = new ArrayList<String>();
 		int i=0;
@@ -35,6 +36,7 @@ public class graphform {
 			String[] tmpw = sb.toString().split("\\s");
 			String tagged = tagger.tagString(tmp);
 			//System.out.println(tagged);
+			//System.out.println();
 			StringBuilder sb1 = new StringBuilder(tagged);
 			String[] tmpw1 = sb1.toString().split("\\s");
 			for(String word : tmpw)
@@ -79,8 +81,9 @@ public class graphform {
 				finalwords1.add(words1.get(k));
 				if(!hm.containsKey(words1.get(k)))
 				{
-					System.out.print("'"+words.get(k)+"'"+","+" ");
+					//System.out.print("'"+words.get(k)+"'"+","+" ");
 					hm.put(words1.get(k),i);
+					hm1.put(i, words1.get(k));
 					i++;
 				}
 			}
@@ -124,13 +127,21 @@ public class graphform {
 				}
 			}
 		}
-		System.out.println();
+		/*System.out.println();
 		System.out.println(now);		
 		for(int m=0;m<now;m++)
 		{
 			for(int n=0;n<now-1;n++)
 				System.out.print(gmatrix.get(m).get(n)+" ");
 			System.out.println(gmatrix.get(m).get(now-1)+";");
-		}		
+		}*/
+		
+		//getting the geodesic matrix
+		ArrayList<ArrayList<Integer>> geomatrix = flwa(gmatrix);
+		//System.out.println(geomatrix);
+		
+		
+		
+	
 	}
 }
