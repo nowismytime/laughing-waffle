@@ -1,0 +1,62 @@
+package Graphs;
+import java.util.*;
+import java.io.*;
+public class fileWrite extends disjointsets {
+	
+	public static void dotCreate(List<Map<String, Set<String>>> disjointSet, HashMap<String, Integer> hm, ArrayList<ArrayList<Integer>> gmatrix, HashMap<Integer, String> hm1) throws IOException
+	{
+		int N = gmatrix.get(0).size();
+		File file = new File("test2.dot");
+		file.createNewFile();
+		FileWriter writer = new FileWriter(file);
+		writer.write("Graph {\n");
+		writer.write("subgraph[style=invis];\n");
+	    writer.write("\n");
+	    int z=0;
+	    for(int i=0;i<disjointSet.size();i++)
+	    {	    	
+	    	Map<String, Set<String>> map = disjointSet.get(i);
+			Set<String> keySet = map.keySet();			
+			for(String key : keySet)
+			{
+				Set<String> set = map.get(key);
+				if(set.size()>1)
+				{
+					writer.write("subgraph cluster_"+z+"{\n");
+					z++;
+					/*if(z%2==0)
+						writer.write("node [style=filled];\n");*/
+					ArrayList<String> newset = new ArrayList<String>();
+					Iterator<String> it = set.iterator();
+					while(it.hasNext())
+					{
+						newset.add(it.next());
+					}
+					//System.out.println(newset.size()==set.size());
+					for(int a=0;a<newset.size()-1;a++)
+					{
+						for(int b=a+1;b<newset.size();b++)
+						{
+							int x = hm.get(newset.get(a));
+							int y = hm.get(newset.get(b));
+							gmatrix.get(x).set(y, 0);
+							writer.write("  "+newset.get(a)+" -- "+newset.get(b)+";\n");
+						}
+					}
+					writer.write("}\n");
+				}
+			}			
+	    }
+	    for(int i=0;i<N;i++)
+		{
+			for(int j=0;j<N;j++)
+			{
+				if(gmatrix.get(i).get(j)==1)
+					writer.write("  "+hm1.get(i)+" -- "+hm1.get(j)+";\n");
+			}
+		}
+	    writer.write("}\n");
+	    writer.flush();
+	    writer.close();
+	}	
+}
