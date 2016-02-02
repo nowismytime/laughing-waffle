@@ -3,6 +3,7 @@ import java.util.*;
 public class clusterize extends disjointsets {
 	public static List<Map<String, Set<String>>> agCluster (ArrayList<ArrayList<Integer>> geomatrix, HashMap<Integer, String> words, int now)
 	{
+		// using github directory directly
 		// create disjoint sets for all elements
 		DisjointSets();
 		for(int i=0;i<words.size();i++)
