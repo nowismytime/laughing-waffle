@@ -1,7 +1,6 @@
 from dsets import DisjointSets
 
-# testing push operation
-# testing pull operation
+
 class AgCluster :
     def agcluster (self, geomatrix, words):
         disjointSet = DisjointSets.disjointSet

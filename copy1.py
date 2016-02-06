@@ -1,6 +1,7 @@
+#!/usr/bin/env python
 import nltk
 
-from 
+
 # floyd warshall algorithm
 def flwa(gmatrix):
     N = len(gmatrix[0])
@@ -112,12 +113,12 @@ finalwords = []
 finalwords1 = []
 
 # getting stopwords
-with open("D:\\User Libraries\\Documents\\NLP\\stopwords.txt") as f:
-    stopwords = [line.rstrip('\n') for line in open("D:\\User Libraries\\Documents\\NLP\\stopwords.txt")]
+with open("stopwords.txt") as f:
+    stopwords = [line.rstrip('\n') for line in open("stopwords.txt")]
 # print(stopwords)
 
 # getting input file
-with open("D:\\User Libraries\\Documents\\NLP\\ii.txt") as f:
+with open("ii.txt") as f:
     for line in f:
         words = nltk.word_tokenize(line)
         finalwords.extend(nltk.pos_tag(words))
