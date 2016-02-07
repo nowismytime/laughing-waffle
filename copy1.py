@@ -1,6 +1,62 @@
 #!/usr/bin/env python
 import nltk
 
+def fileWrite (disjointSet, hm, gmatrix, hm1):
+    N = len(gmatrix[0])
+    fo = open ("test2.dot", "w")
+    ab1 =0
+    str1 = "Graph {"
+    fo.seek(0, ab1)
+    line = fo.write(str1)
+    ab1 += 1
+
+    str1 = "subgraph[style=invis];"
+    fo.seek(0, ab1)
+    line = fo.write(str1)
+    ab1 += 1
+
+    z=0
+
+    for i in range(len(disjointSet)):
+        keys = disjointSet[i].keys()
+        for key in keys:
+            if len(disjointSet[i][key])>1:
+                str1 = "subgraph cluster_"+z.__str__()+"{"
+                fo.seek(0, ab1)
+                line = fo.write(str1)
+                ab1 += 1
+                z+=1
+                newset = []
+                for element in disjointSet[i][key]:
+                    newset.extend(element)
+                for a in range(len(newset)-1):
+                    for b in range(a+1,len(newset)):
+                        temp11 = newset[a]
+                        x = hm[temp11]
+                        temp11 = newset[b]
+                        y = hm[temp11]
+                        gmatrix[x][y] =0
+                        str = "  "+newset[a]+" -- "+newset[b]+";"
+                        fo.seek(0, ab1)
+                        line = fo.write(str)
+                        ab1 += 1
+                str = "{"
+                fo.seek(0, ab1)
+                line = fo.write(str)
+                ab1 += 1
+
+    for i in range(N):
+        for j in range(N):
+            if gmatrix[i][j]==1:
+                str = "  "+hm1[i]+" -- "+hm1[j]+";"
+                fo.seek(0, ab1)
+                line = fo.write(str)
+                ab1 += 1
+
+    str = "}"
+    fo.seek(0, ab1)
+    line = fo.write(str)
+    ab1 += 1
 
 # floyd warshall algorithm
 def flwa(gmatrix):
@@ -179,7 +235,10 @@ dmatrix = flwa(gmatrix)
 #print(dmatrix)
 
 disets = []
+
 dlist = agcluster(disets,dmatrix,hm2)
+fileWrite(disets,hm1,gmatrix,hm2)
+
 for index in range(len(dlist)):
     print(dlist[index])
     print("\n")
