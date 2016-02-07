@@ -5,27 +5,38 @@ import nltk
 # floyd warshall algorithm
 def flwa(gmatrix):
     N = len(gmatrix[0])
-    dmatrix = []
+    dmatrix1 = []
     for a in range(N):
         temp = []
         for b in range(N):
             temp.extend([0])
-        dmatrix.append(temp)
+        dmatrix1.append(temp)
 
     for a in range(N):
         for b in range(N):
             if (a!=b) & (gmatrix[a][b]==0):
-                dmatrix[a][b]=9999
+                dmatrix1[a][b]=9999
             else:
-                dmatrix[a][b]=gmatrix[a][b]
+                dmatrix1[a][b]=gmatrix[a][b]
 
     for k in range(N):
         for i in range(N):
             for j in range(N):
-                if dmatrix[i][k]+dmatrix[k][j] < dmatrix[i][j]:
-                    dmatrix[i][j] = dmatrix[i][k]+dmatrix[k][j]
+                if dmatrix1[i][k]+dmatrix1[k][j] < dmatrix1[i][j]:
+                    dmatrix1[i][j] = dmatrix1[i][k]+dmatrix1[k][j]
+    max1 =0
 
-    return dmatrix
+    for c in range(N):
+        for d in range(N):
+            if (dmatrix1[c][d]>max1) & (dmatrix1[c][d]<9999):
+                max1 = dmatrix1[c][d];
+    max1 *= 2
+    for a in range(N):
+        for b in range(N):
+            if (a!=b) & (dmatrix1[a][b]==9999):
+                dmatrix1[a][b]=max1
+
+    return dmatrix1
 
 # disjoint sets functions
 
@@ -75,7 +86,7 @@ def setFind (disets, element):
 def agcluster (disets, geomatrix, words):
     for i in range(len(words)):
         setCreate(disets, words[i])
-    while len(disets)>20:
+    while len(disets)>10:
         N = len(geomatrix[0])
         imin = -1
         jmin = -1
@@ -153,7 +164,7 @@ for a in range(len(hm1)):
         temp.extend([0])
     gmatrix.append(temp)
 for a in range(len(finalwords1)):
-    for b in range(a-5,a+5):
+    for b in range(a-10,a+10):
         if(b >= 0) & (b < len(finalwords1)) & (b != a):
             a1 = finalwords1[a][1]
             a2 = finalwords1[b][1]
