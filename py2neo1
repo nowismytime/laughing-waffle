@@ -1,0 +1,22 @@
+from py2neo import neo4j, Graph, Node, authenticate, Path, Relationship
+authenticate("localhost:7474", "neo4j", "10p13dd0053")
+graph = Graph()
+graph.delete_all()
+a = Node("Person", name="Alice")
+b = Node("Person", name="Bob")
+c = Node("Person", name="Carol")
+ab = Relationship(a,"Knows", b)
+ac = Relationship(a, "Works with", c)
+ca = Relationship(c, "Works with", a)
+bc = Relationship(b, "likes", c)
+graph.create(a)
+graph.create(b)
+graph.create(c)
+graph.create(ab)
+graph.create(ac)
+graph.create(ca)
+graph.create(bc)
+print(graph)
+
+
+
