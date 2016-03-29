@@ -1,10 +1,11 @@
 import pprint
 import datetime
+from py2neo import authenticate
 from py2neo.neo4j import Index
 #import wiki
 from wikitools import api
 from wikitools import wiki
-
+import py2neo.legacy.index
 from wikitools import category
 import wikitools
 from wikitools import page
@@ -13,21 +14,22 @@ from wikitools.page import NoPage, Page
 from py2neo import neo4j, node, rel
 import logging
 logging.basicConfig(level=logging.WARNING)
-
+authenticate("localhost:7474", "neo4j", "10p13dd0053")
 #people = re.compile(r'Category:.*People', re.I)
 #badlinks = re.compile(r'stubs|Help:|Talk:|Wikipedia|Template:|Portal:|Outline of|List of|Outlines of|Catalog of|Lists of|Glossary|Glossaries|Index of|Timeline of|History of|Chronology|Index of|Overview|Journals|Redirects|Book:')
 needless = re.compile(r' \(')
 site = wiki.Wiki("http://en.wikipedia.org/w/api.php")
 
 #local
-graph_db = neo4j.GraphDatabaseService("http://localhost:8080/db/data/")
-
+graph_db = neo4j.Graph("http://localhost:7474/db/data/")
+graph_db.delete_all()
 ## for testing only, make sure we have a clean slate!!
 #graph_db.clear()
 #@type : Index
-db_categories = graph_db.get_or_create_index(neo4j.Node, "Categories")
+
+db_categories = graph_db.legacy.get_or_create_index(neo4j.Node, "Categories")
 #@type : Index
-db_pages = graph_db.get_or_create_index(neo4j.Node, "Pages")
+db_pages = graph_db.legacy.get_or_create_index(neo4j.Node, "Pages")
 
 
 def log(msg):
@@ -123,11 +125,11 @@ def WTree(name, visitedCategories=set(), dbcat=None):
         if new is False and ('d' in childcat or catname in visitedCategories):
             continue
 
-        log(" - about to dive into subcategory '{}'".format(catname))
+        #log(" - about to dive into subcategory '{}'".format(catname))
         WTree(catname, visitedCategories, childcat)
         childcat['d'] = datetime.datetime.now()
 
-    log("Finished processing {}".format(name))
+    #log("Finished processing {}".format(name))
 
 #   except Exception as ex:
 # #     if ex is NoPage:
