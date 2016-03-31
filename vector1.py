@@ -200,14 +200,12 @@ print(len(rmatrix2))
 #creating dictionaries to map row numbers and words
 rhm1={}
 rhm2={}
-rhm3={}
 ind1 = 0
 for index in range(len(hm1)):
     if (index not in cols):
         rhm2[ind1] = hm2[index]
         rhm1[hm2[index]]=ind1
         ind1 +=1
-
 '''
 #calculating distance between different vectors
 print("Calculating distance between vectors....")
@@ -232,11 +230,13 @@ for i in range(len(rmatrix2)):
         distmat[i][j] = distmat[j][i]
 '''
 
+
 # k-means clustering
 centroids=[]
 clusters=[]
 print("Applying K-means clustering....")
-centroids, clusters = kmeans(np.asarray(rmatrix2,float),20)
+centroids, clusters = kmeans(np.asarray(rmatrix2,float),4)
+
 
 
 
