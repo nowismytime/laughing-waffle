@@ -5,6 +5,94 @@ import numpy as np
 import scipy
 import matplotlib.pyplot as plt
 from scipy import linalg, mat, dot;
+import os
+
+def kmeans(data, k):
+
+    centroids = []
+
+    centroids = randomize_centroids(data, centroids, k)
+
+    old_centroids = [[] for i in range(k)]
+
+    iterations = 0
+    while not (has_converged(centroids, old_centroids, iterations)):
+        iterations += 1
+
+        clusters = [[] for i in range(k)]
+
+        # assign data points to clusters
+        clusters = euclidean_dist(data, centroids, clusters)
+
+        # recalculate centroids
+        index = 0
+        for cluster in clusters:
+            old_centroids[index] = centroids[index]
+            centroids[index] = np.mean(cluster, axis=0, dtype= 'float').tolist()
+            index += 1
+
+
+    print("The total number of data instances is: " + str(len(data)))
+    print("The total number of iterations necessary is: " + str(iterations))
+    print("The means of each cluster are: " + str(centroids))
+    print("The clusters are as follows:")
+    for cluster in clusters:
+        print("Cluster with a size of " + str(len(cluster)) + " starts here:")
+        print(np.array(cluster).tolist())
+        print("Cluster ends here.")
+
+    return centroids, clusters
+
+# Calculates euclidean distance between
+# a data point and all the available cluster
+# centroids.
+def euclidean_dist(data, centroids, clusters):
+    for instance in data:
+        # Find which centroid is the closest
+        # to the given data point.
+
+       # minima = 999999
+        #iminima=-1
+        #for index, center in enumerate(centroids):
+         #   tdis =0
+          #  for k1 in range(len(center)):
+           #     tdis1 = float(instance[k1])-float(center[k1])
+            #    tdis += tdis1*tdis1
+            #tmin = math.sqrt(tdis)
+            #if (tmin<minima):
+             #   minima = tmin
+              #  iminima = index
+        #mu_index = iminima
+        mu_index = min([(i[0], np.linalg.norm(instance-np.asarray(centroids[i[0]]))) \
+                          for i in enumerate(centroids)], key=lambda t:t[1])[0]
+        try:
+            clusters[mu_index].append(instance)
+        except KeyError:
+            clusters[mu_index] = [instance]
+
+    # If any cluster is empty then assign one point
+    # from data set randomly so as to not have empty
+    # clusters and 0 means.
+    for cluster in clusters:
+        if not cluster:
+            cluster.append(data[np.random.randint(0, len(data), size=1)].flatten().tolist())
+
+    return clusters
+
+
+# randomize initial centroids
+def randomize_centroids(data, centroids, k):
+    for cluster in range(0, k):
+        centroids.append(data[np.random.randint(0, len(data), size=1)].flatten().tolist())
+    return centroids
+
+
+# check if clusters have converged
+def has_converged(centroids, old_centroids, iterations):
+    MAX_ITERATIONS = 1000
+    if iterations > MAX_ITERATIONS:
+        return True
+    return old_centroids == centroids
 
 def svd(gmatrix):
 
@@ -13,7 +101,7 @@ def svd(gmatrix):
     energy=0
     for index in range(len(s)):
         energy += s[index]*s[index]
-    energy *= 0.8
+    energy *= 0.5
     #print (energy)
     sum=0
     index = len(s)-1
@@ -39,121 +127,6 @@ def svd(gmatrix):
     return s11
 
 
-# floyd warshall algorithm
-def flwa(gmatrix):
-    N = len(gmatrix[0])
-    dmatrix1 = []
-    for a in range(N):
-        temp = []
-        for b in range(N):
-            temp.extend([0])
-        dmatrix1.append(temp)
-
-    for a in range(N):
-        for b in range(N):
-            if (a!=b) & (gmatrix[a][b]==0):
-                dmatrix1[a][b]=9999
-            else:
-                dmatrix1[a][b]=gmatrix[a][b]
-
-    for k in range(N):
-        for i in range(N):
-            for j in range(N):
-                if dmatrix1[i][k]+dmatrix1[k][j] < dmatrix1[i][j]:
-                    dmatrix1[i][j] = dmatrix1[i][k]+dmatrix1[k][j]
-    max1 =0
-
-    for c in range(N):
-        for d in range(N):
-            if (dmatrix1[c][d]>max1) & (dmatrix1[c][d]<9999):
-                max1 = dmatrix1[c][d];
-    max1 *= 2
-    for a in range(N):
-        for b in range(N):
-            if (a!=b) & (dmatrix1[a][b]==9999):
-                dmatrix1[a][b]=max1
-
-    return dmatrix1
-
-# disjoint sets functions
-
-# create sets for each element
-def setCreate (disets, element):
-    nset = set()
-    nset.add(element)
-    hashmap={element: nset}
-    disets.append(hashmap)
-
-# union two sets containing elements 1 and 2
-def union (disets, element1, element2):
-    first_rep = setFind(disets, element1)
-    second_rep = setFind(disets, element2)
-
-    first_set = set()
-    second_set = set()
-
-    for index in range(len(disets)):
-        if first_rep in disets[index]:
-            first_set = disets[index][first_rep]
-        elif second_rep in disets[index]:
-            second_set = disets[index][second_rep]
-
-    if (len(first_set) != 0) & (len(second_set) != 0):
-        first_set=first_set.union(second_set)
-
-    for index in range(len(disets)):
-        if first_rep in disets[index]:
-            disets[index][first_rep] = first_set
-
-    for index in range(len(disets)):
-        if second_rep in disets[index]:
-            del disets[index][second_rep]
-            disets.remove(disets[index])
-            break
-
-# find the representative for the set containing the element
-def setFind (disets, element):
-    for index in range(len(disets)):
-        keys = disets[index].keys()
-        for key in keys:
-            if element in disets[index][key]:
-                return key
-
-# clustering function
-def agcluster (disets, geomatrix, words):
-    for i in range(len(words)):
-        setCreate(disets, words[i])
-    while len(disets)>10:
-        N = len(geomatrix[0])
-        imin = -1
-        jmin = -1
-        min = 9999
-        for i in range(N):
-            for j in range(N):
-                if (geomatrix[i][j] != 0) & (geomatrix[i][j]<min):
-                    imin = i
-                    jmin = j
-                    min = geomatrix[i][j]
-        if (imin==-1):
-            break
-        first = words[imin]
-        second = words[jmin]
-        geomatrix[imin][jmin] = 9999
-
-        if setFind(disets, first) != setFind(disets, second):
-            union(disets, first, second)
-
-        #for i in range(len(disets)):
-         #   keys = disets[i].keys()
-          #  for key in keys:
-           #     temp = disets[i][key]
-            #    for t1 in temp:
-             #       print (t1)
-              #      print (" ")
-               # print ("\n")
-
-    return disets
-
 # main function
 hm1 = {}
 hm2 = {}
@@ -166,7 +139,7 @@ with open("stopwords.txt") as f:
 # print(stopwords)
 
 # getting input file
-with open("text8.txt") as f:
+with open("ii.txt") as f:
     for line in f:
         words = nltk.word_tokenize(line)
         finalwords.extend(nltk.pos_tag(words))
@@ -218,28 +191,65 @@ for a in range(len(finalwords1)):
 # getting geodesic matrix
 #dmatrix = flwa(gmatrix)
 #print(dmatrix)
-
-print ("Words removed and no. of 1s in their row")
+rmatrix2 = []
+rmatrix1 =[]
 rmatrix = svd(gmatrix)
-count1=0
+#print (rmatrix)
+cols =[]
+
 for i1 in range(len(rmatrix)):
     f1 = 0
     for j in range(len(rmatrix)):
         if (rmatrix[i1][j]!=0):
             f1=1
             break
-    if (f1==0):
-        sum11=0
-    else:
-        sum11=0
-        for j in range(len(gmatrix)):
-            sum11 += gmatrix[i1][j]
-        print (hm2[i1])
-        print(sum11)
-        count1 += 1
+    if (f1==1):
+        rmatrix1.append(rmatrix[i1])
+        cols.append(i1)
 
-disets = []
-print(count1)
+for i1 in range(len(rmatrix1)):
+    temp=[]
+    for j in range(len(rmatrix)):
+        if (j in cols):
+            temp.append(rmatrix1[i1][j])
+    rmatrix2.append(temp)
+
+#print(len(rmatrix2[0]))
+rhm1={}
+rhm2={}
+ind1 = 0
+for index in range(len(hm1)):
+    if (index not in cols):
+        rhm2[ind1] = hm2[index]
+        rhm1[hm2[index]]=ind1
+        ind1 +=1
+
+distmat = []
+for i in range(len(rmatrix2)):
+    temp1 = []
+    for j in range(len(rmatrix2)):
+        temp1.insert(0,0)
+    distmat.append(temp1)
+
+for i in range(len(rmatrix2)):
+    for j in range(i+1,len(rmatrix2)):
+        dist = 0
+        for k in range(len(rmatrix2)):
+            psum = rmatrix2[i][k]-rmatrix2[j][k]
+            dist += psum*psum
+        distmat[i][j]=np.linalg.norm(np.asarray(rmatrix2[i])-np.asarray(rmatrix2[j]))
+
+for i in range(len(rmatrix2)):
+    for j in range(i):
+        distmat[j][i]= '%.2f' % distmat[j][i]
+        distmat[i][j] = distmat[j][i]
+
+centroids=[]
+clusters=[]
+centroids, clusters = kmeans(np.asarray(distmat,float),5)
+#print(distmat)
+
+
 #dlist = agcluster(disets,dmatrix,hm2)
 #
 # fileWrite(disets,hm1,gmatrix,hm2)
