@@ -4,21 +4,17 @@ import math
 import numpy as np
 import scipy
 import matplotlib.pyplot as plt
-from scipy import linalg, mat, dot;
+from scipy import linalg, mat, dot
 import os
 
 def kmeans(data, k):
 
     centroids = []
-
     centroids = randomize_centroids(data, centroids, k)
-
     old_centroids = [[] for i in range(k)]
-
     iterations = 0
     while not (has_converged(centroids, old_centroids, iterations)):
         iterations += 1
-
         clusters = [[] for i in range(k)]
 
         # assign data points to clusters
@@ -37,9 +33,9 @@ def kmeans(data, k):
     print("The means of each cluster are: " + str(centroids))
     print("The clusters are as follows:")
     for cluster in clusters:
-        print("Cluster with a size of " + str(len(cluster)) + " starts here:")
-        print(np.array(cluster).tolist())
-        print("Cluster ends here.")
+        print("Cluster with a size of " + str(len(cluster)))
+        #print(np.array(cluster).tolist())
+        #print("Cluster ends here.")
 
     return centroids, clusters
 
@@ -50,19 +46,6 @@ def euclidean_dist(data, centroids, clusters):
     for instance in data:
         # Find which centroid is the closest
         # to the given data point.
-
-       # minima = 999999
-        #iminima=-1
-        #for index, center in enumerate(centroids):
-         #   tdis =0
-          #  for k1 in range(len(center)):
-           #     tdis1 = float(instance[k1])-float(center[k1])
-            #    tdis += tdis1*tdis1
-            #tmin = math.sqrt(tdis)
-            #if (tmin<minima):
-             #   minima = tmin
-              #  iminima = index
-        #mu_index = iminima
         mu_index = min([(i[0], np.linalg.norm(instance-np.asarray(centroids[i[0]]))) \
                           for i in enumerate(centroids)], key=lambda t:t[1])[0]
         try:
@@ -119,11 +102,7 @@ def svd(gmatrix):
     for i in range (len(s11)):
         for j in range(len(s11)):
             s11[i][j]= '%.2f' % s11[i][j]
-    #for i in range (len(s11)):
-     #   print (s11[i])
-    #print(len(s11))
-    #plt.plot(s11)
-    #plt.show()
+
     return s11
 
 
@@ -133,6 +112,7 @@ hm2 = {}
 finalwords = []
 finalwords1 = []
 
+print("reading files, extracting words....")
 # getting stopwords
 with open("stopwords.txt") as f:
     stopwords = [line.rstrip('\n') for line in open("stopwords.txt")]
@@ -146,12 +126,13 @@ with open("ii.txt") as f:
 # print(finalwords)
 # print (len(finalwords))
 
+print("removing stopwords.....")
 # removing stopwords
 for index in range(len(finalwords)):
     words = finalwords[index]
     temp = words[0].lower()
     if temp not in stopwords and (temp != ".") & (temp != ",") & (temp != "–") & (temp != ":") & (temp != "(") & (
-        temp != ")"):
+        temp != ")") & (temp != "[") & (temp != "]") & (temp != ";") & (temp != "?"):
         finalwords1.append(words)
 #print (finalwords1)
 #print (len(finalwords1))
@@ -169,6 +150,7 @@ for index in range(len(finalwords1)):
 print ("total words before reduction")
 print(len(hm1))
 
+print("generating adjacency matrix....")
 # generating adjacency matrix
 gmatrix = []
 for a in range(len(hm1)):
@@ -188,9 +170,8 @@ for a in range(len(finalwords1)):
 #print(gmatrix)
 
 
-# getting geodesic matrix
-#dmatrix = flwa(gmatrix)
-#print(dmatrix)
+# Singular Value Decompostion of the adjacency matrix
+print("Applying SVD for dimensionality reduction.....")
 rmatrix2 = []
 rmatrix1 =[]
 rmatrix = svd(gmatrix)
@@ -213,10 +194,13 @@ for i1 in range(len(rmatrix1)):
         if (j in cols):
             temp.append(rmatrix1[i1][j])
     rmatrix2.append(temp)
+print("total words after reduction")
+print(len(rmatrix2))
 
-#print(len(rmatrix2[0]))
+#creating dictionaries to map row numbers and words
 rhm1={}
 rhm2={}
+rhm3={}
 ind1 = 0
 for index in range(len(hm1)):
     if (index not in cols):
@@ -224,6 +208,9 @@ for index in range(len(hm1)):
         rhm1[hm2[index]]=ind1
         ind1 +=1
 
+'''
+#calculating distance between different vectors
+print("Calculating distance between vectors....")
 distmat = []
 for i in range(len(rmatrix2)):
     temp1 = []
@@ -243,20 +230,16 @@ for i in range(len(rmatrix2)):
     for j in range(i):
         distmat[j][i]= '%.2f' % distmat[j][i]
         distmat[i][j] = distmat[j][i]
+'''
 
+# k-means clustering
 centroids=[]
 clusters=[]
-centroids, clusters = kmeans(np.asarray(distmat,float),5)
-#print(distmat)
+print("Applying K-means clustering....")
+centroids, clusters = kmeans(np.asarray(rmatrix2,float),20)
 
 
-#dlist = agcluster(disets,dmatrix,hm2)
-#
-# fileWrite(disets,hm1,gmatrix,hm2)
 
-#for index in range(len(dlist)):
-  #  print(dlist[index])
-   # print("\n")
 
 
 

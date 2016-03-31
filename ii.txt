@@ -1,13 +1,314 @@
-Pollution is when something is added to the environment that is harmful or poisonous to living things. Smoke or dust in the air is a type of pollution as it is bad for the lungs when breathed in. Sewage in drinking water is another type of pollution, as it can make people ill because it contains germs and viruses. People living next to a building site where there is too much noise can become sick as they cannot sleep.
-Air pollution is caused by poison gases , sulphur dioxide, nitrogen dioxide,, carbon monoxide and very small particles of carbon. It is also caused by the smoke and harmful gases released by the fires that make vehicles and factories go. Use of coal, wood and kerosene as fuels for fire also causes air pollution. Air pollution may cause breathing problems such as asthma or other health problems. It also causes diseases like cancer.
+The BMW i8, first introduced as the BMW Concept Vision Efficient Dynamics, is a plug-in hybrid sports car developed by BMW. The 2015 model year BMW i8 has a 7.1 kWh lithium-ion battery pack that delivers an all-electric range of 37 km (23 mi) under the New European Driving Cycle (NEDC).[5] Under the United States Environmental Protection Agency (EPA) cycle, the range in EV mode is 24 km (15 mi) with a small amount of gasoline consumption.[7] The design is heavily influenced by the BMW M1 Hommage Concept (which is itself, a retro concept of the original M1).
+The BMW i8 can go from 0–100 km/h (0 to 60 mph) in 4.4 seconds and has a top speed of 250 km/h (155 mph).[10] The BMW i8 has a fuel efficiency of 2.1 L/100 km (134.5 mpg-imp; 112.0 mpg-US) under the NEDC test with carbon emissions of 49 g/km.[5] EPA rated the i8 combined fuel economy at 76 equivalent (MPG-equivalent) (3.1 L gasoline equivalent/100 km; 91 mpg-imp gasoline equivalent) and '29 miles per gallon' when running in pure gasoline mode (after the battery is drained empty).[7]
+The initial turbodiesel concept car was unveiled at the 2009 International Motor Show Germany.[11] The production version of the BMW i8 was unveiled at the 2013 Frankfurt Motor Show.[12] The i8 was released in Germany in June 2014.[13] Deliveries to retail customers in the U.S. began in August 2014.[14] Global cumulative sales totaled almost 7,200 units through December 2015.[15][16] The top selling markets are the United States, the UK and Germany.[17]
+Contents  [hide] 
+1	History
+1.1	BMW Vision Efficient Dynamics (2009)
+1.2	BMW i8 Concept (2011)
+1.3	BMW i8 Concept Spyder (2012)
+1.4	BMW i8 coupe prototype (2013)
+2	Production version
+2.1	Range and fuel economy
+2.2	Engines
+2.3	Special edition
+3	Sales and markets
+3.1	Australia
+3.2	India
+3.3	China
+3.4	Europe
+3.5	United States
+4	Awards and recognition
+5	Marketing
+6	Gallery
+7	See also
+8	References
+9	External links
+History[edit]
+Because the BMW M1 (1978) was deemed a commercial flop (only 453 were produced), BMW was extremely hesitant at producing a new mid-engined production car. Concept cars like the ItalDesign BMW Nazca C2 (1992) kept public interest in a mid-engined BMW, though BMW only decided to build the BMW M1 Hommage in response to the retro-craze. The renewed public-interest, convinced BMW to re-pursue the ''mid-engined'' idea, and BMW unveiled the VED Concept to an enthusiastic public.
+The i8 is part of BMW's "Project i" and it is being marketed as a new brand, BMW i, sold separately from BMW or Mini. The BMW i3, launched for retail customers in Europe in the fourth quarter of 2013, was the first model of the i brand available in the market, and it was followed by the i8, released in Germany in June 2014 as a 2015 model year. Other i models are expected to follow.[13][18][19]
+The initial turbodiesel concept car was unveiled at the 2009 International Motor Show Germany,[11] In 2010, BMW announced the mass production of the Concept Vision Efficient Dynamics in Leipzig beginning in 2013 as the BMW i8.[20] The BMW i8 gasoline-powered concept car destined for production was unveiled at the 2011 Frankfurt Motor Show.[21] The production version of the BMW i8 was unveiled at the 2013 International Motor Show Germany.[12] The following are the concept and pre-production models developed by BMW that precedeed the production version.
+BMW Vision Efficient Dynamics (2009)[edit]
+Vision Efficient Dynamics concept vehicle unveiled at the 2009 International Motor Show Germany.
+BMW Vision Efficient Dynamics concept car is a plug-in hybrid with a three cylinder turbodiesel engine.[11] Additionally, there are two electric motors with 139 horsepower. It allows an acceleration to 100 km/h (62 mph) in 4.8 seconds and an electronically limited top speed of 250 km/h (160 mph).[20]
+According to BMW, the average fuel consumption in the EU test cycle (KV01) is 3.76 liters/100 kilometers, (75.1 mpg imp), and has a carbon dioxide emission rating of 99 grams per kilometer (1,3 l/100 km and 33g CO2/km ; EU-PHEV ECE-R101). The estimated all-electric range is 50 km (31 mi), and the 24-liter petrol tank extends the total vehicle range to up to 700 km (430 mi).[20] The lightweight chassis is made mainly from aluminum. The windshield, top, doors and fenders are made from polycarbonate glass, with the body having a drag coefficient of 0.26.[22]
+The designers in charge of the BMW Vision Efficient Dynamics Concept were Mario Majdandzic, Exterior Design and Jochen Paesen, Interior Design.[23]
+The vehicle was unveiled in 2013 International Motor Show Germany,[24][25] followed by Auto China 2010.[26]
+BMW i8 Concept (2011)[edit]
+BMW i8 Concept exhibited at the 2011 International Motor Show Germany.
+BMW i8 Concept plug-in hybrid electric vehicle includes an electric motor located in the front axle powering the front wheels rated 96 kW (131 PS; 129 hp) and 250 N·m (184 lb·ft), a turbocharged 1.5-liter 3-cylinder gasoline engine driving rear wheels rated 164 kW (223 PS; 220 hp) and 300 N·m (221 lb·ft) of torque, with combined output of 260 kW (354 PS; 349 hp) and 550 N·m (406 lb·ft), a 7.2 kWh (26 MJ) lithium-ion battery pack that allows an all-electric range of 35 km (22 mi). All four wheels provide regenerative braking. The location of the battery pack in the energy tunnel gives the vehicle a low centre of gravity, enhancing its dynamics. Its top speed is electronically limited to 250 km/h (160 mph) and is expected to go from 0 to 100 km/h (0 to 60 mph) in 4.6 seconds. Under normal driving conditions the i8 is expected to deliver 80 mpg-US (2.9 L/100 km; 96 mpg-imp) under the European cycle. A full charge of the battery will take less than 2 hours using 220V.[21][27] The positioning of the motor and engine over the axles results in optimum 50/50 weight distribution.[27][28][29]
+The vehicle was unveiled at the 2011 International Motor Show Germany, followed by CENTER 548 in New York City,[30] 42nd Tokyo Motor Show 2011,[31] 82nd Geneva Motor Show 2012,[32] BMW i Born Electric Tour at the Palazzo delle Esposizioni at Via Nazionale 194 in Rome,[33] Auto Shanghai 2013.[34]
+This concept car was featured in the film Mission: Impossible – Ghost Protocol.
+BMW i8 Concept Spyder (2012)[edit]
+The BMW i8 Concept Spyder included a slightly shorter wheelbase and overall length over the BMW i8 Concept, carbon-fibre-reinforced plastic (CFRP) Life module, drive modules made primarily from aluminium components, interlocking of surfaces and lines, 8.8-inch (22.4 cm) screen display, off-white outer layer, orange tone naturally tanned leather upholstery.[35]
+The vehicle was unveiled in Auto China 2012 in Beijing[36] and won Concept Car of the Year,[37][38][39] followed by 83rd Geneva International Motor Show 2013.[40]
+The designer of the BMW i8 Concept Spyder was Richard Kim.[3][41]
+BMW i8 coupe prototype (2013)[edit]
+The design of the BMW i8 coupe prototype was based on the BMW i8 Concept. The BMW i8 prototype has an average fuel efficiency of less than 2.5 L/100 km (113.0 mpg-imp; 94.1 mpg-US) under the New European Driving Cycle with carbon emissions of less than 59 g/km. The i8 with its carbon-fiber-reinforced plastic (CFRP) passenger cell lightweight, aerodynamically optimized body, and BMW eDrive technology offers the dynamic performance of a sports car, with an expected 0–100 km (0–60 mi) sprint time of less than 4.5 seconds using both power sources. The plug-in hybrid system of the BMW i8 comprises a three-cylinder, 1.5-liter BMW TwinPower turbo gasoline engine combined with BMW eDrive technology used in the BMW i3 and develops maximum power of 170 kW (230 hp). The BMW i8 is the first BMW production model to be powered by a three-cylinder gasoline engine and the resulting specific output of 115 kW (154 hp) per liter of displacement is on a par with high-performance sports car engines and is the highest of any engine produced by the BMW Group.[4]
+BMW Vision Efficient Dynamics concept exhibited at the BMW i store in Park Lane, London.
+The BMW i8's second power source is a hybrid synchronous electric motor specially developed and produced by the BMW Group for BMW i. The electric motor develops maximum power of 131 hp (96 kW) and produces its maximum torque of around 320 N·m (240 lbf·ft) from standstill. Typical of an electric motor, responsive power is instantly available when starting and this continues into the higher load ranges. As well as providing a power boost to assist the gasoline engine during acceleration, the electric motor can also power the vehicle by itself. Top speed in electric mode is approximately 120 km/h (75 mph), with a maximum driving range of up to 35 km (22 mi). Linear acceleration is maintained even at higher speeds since the interplay between the two power sources efficiently absorbs any power flow interruptions when shifting gears. The model-specific version of the high-voltage 7.2 lithium-ion battery has a liquid cooling system and can be recharged at a conventional household power socket, at a BMW i Wallbox or at a public charging station. In the US a full recharge takes approximately 3.5 hours from a conventional 120V, 12 amp household circuit or approximately 1.5 hours from a 220V Level 2 charger.[4][42]
+The driver can also select several driving modes: SPORT, COMFORT and ECO PRO. Using the gear selector, the driver can either select position D for automated gear selection or can switch to SPORT mode. SPORT mode offers manual gear selection and at the same time switches to very sporty drive and suspension settings. In SPORT mode, the engine and electric motor deliver extra performance, accelerator response is faster and the power boost from the electric motor is maximized. And to keep the battery topped up, SPORT mode also activates maximum energy recuperation during overrun and braking as the electric motor’s generator function, which recharges the battery using kinetic energy, switches to a more powerful setting. The Driving Experience Control switch on the center console offers a choice of two settings. On starting, COMFORT mode is activated, which offers a balance between sporty performance and fuel efficiency, with unrestricted access to all convenience functions. Alternatively, the ECO PRO mode can be engaged, which, on the BMW i8 as on other models, supports an efficiency-optimized driving style. On this mode the powertrain controller coordinates the cooperation between the gasoline engine and the electric motor for maximum fuel economy. On deceleration, the intelligent energy management system automatically decides, in line with the driving situation and vehicle status, whether to recuperate braking energy or to coast with the powertrain disengaged. At the same time, ECO PRO mode also programs electrical convenience functions such as the air conditioning, seat heating and heated mirrors to operate at minimum power consumption, but without compromising safety. The maximum driving range of the BMW i8 on a full fuel tank and with a fully charged battery is more than 500 km (310 mi) in COMFORT mode, which can be increased by up to 20% in ECO PRO mode. The BMW i8’s ECO PRO mode can also be used during all-electric operation. The vehicle is then powered solely by the electric motor. Only if the battery charge drops below a given level, or under sudden intense throttle application such as kickdown, is the internal combustion engine automatically activated.
+The vehicle was unveiled in BMW Group's Miramas test track in France.[4][43]
+Production version[edit]
+BMW i8 frontal view (production model)
+BMW i8 rear view (production model)
+The production BMW i8 was designed by Benoit Jacob.[2] The production version was unveiled at the 2013 International Motor Show Germany,[18] followed by 2013 Les Voiles de Saint-Tropez.[44] It features butterfly doors, head-up display, rear-view cameras and partially false engine noise.[45] Series production of customer vehicles began in April 2014.[5] It is the first production car with laser headlights, reaching further than LED lights.[46]
+The i8 has a low vehicle weight of 1,485 kg (3,274 lb) (DIN kerb weight) and a low drag coefficient (Cd) of 0.26. In all-electric mode the BMW i8 has a top speed of 120 km/h (75 mph). In Sport mode the i8 delivers a mid-range acceleration from 80 to 120 km/h (50 to 75 mph) in 2.6 seconds. The electronically controlled top speed is 250 km/h (160 mph).[5]
+Range and fuel economy[edit]
+The production i8 has a 7.1 kWh lithium-ion battery pack with a usable capacity of 5.2 kWh and intelligent energy management that delivers an all-electric range of 37 km (23 mi) under the NEDC cycle. Under the EPA cycle, the range in EV mode is 15 mi (24 km), with a gasoline consumption of 0.1 gallons per 100 mi, and as a result, EPA's all-electric range is zero. The total range is 330 mi (530 km).[7]
+The production version has a fuel efficiency of 2.1 L/100 km (134.5 mpg-imp; 112.0 mpg-US) under the NEDC test with carbon emissions of 49 g/km.[5] Under EPA cycle, the i8 combined fuel economy in EV mode was rated 76 equivalent (MPG-equivalent) (3.1 L gasoline equivalent/100 km; 91 mpg-imp gasoline equivalent), with an energy consumption of 43 kW-hrs/100 mi and gasoline consumption of 0.1 gal-US/100 mi. The combined fuel economy when running only with gasoline is 28 mpg-US (8.4 L/100 km; 34 mpg-imp), 28 mpg-US (8.4 L/100 km; 34 mpg-imp) for city driving, and 29 mpg-US (8.1 L/100 km; 35 mpg-imp) in highway.[7][47]
+The U.S. Environmental Protection Agency's 2014 edition of the "Light-Duty Automotive Technology, Carbon Dioxide Emissions, and Fuel Economy Trends" introduced utility factors for plug-in hybrids to represent the percentage of miles that will be driven using electricity by an average driver, in electric only or blended modes. The BMW i8 has a utility factor in EV mode of 37%, compared with 83% for the BMW i3 REx, 66% for the Chevrolet Volt, 65% for the Cadillac ELR, 45% for the Ford Energi models, 43% for the McLaren P1, 39% for the Porsche Panamera S E-Hybrid, and 29% for the Toyota Prius PHV.[48]
+Engines[edit]
+[hide]Model	Years	Type/code	Power, torque@rpm
+i8	2014–	1,499 cc (91.5 cu in) I3 turbo B38A15T0	231 PS (170 kW; 228 hp)@5800, 320 N·m (236 lb·ft)@3700
+hybrid synchronous motor	131 PS (96 kW; 129 hp)@?, 250 N·m (184 lb·ft)@0rpm	
+Special edition[edit]
+The special-edition BMW i8 Protonic Red Edition model will be unveiled at the 2016 Geneva International Motor Show.[49] The Protonic Red Edition will be produced at BMW Plant Leipzig from July 2016. This special edition car sports a Protonic Red paint finish with accents in Frozen Grey metallic. The colour scheme is complemented by BMW W-spoke 470 light-alloy wheels painted in Orbit Grey metallic with hubs painted in Aluminium matt and mixed-size tires (front: 215/45 R20, rear: 245/40 R20). Inside the car features red double-stitching and applications in high-grade carbon fibre and ceramic trim.[50]
+Sales and markets[edit]
+2014 BMW i8 interior
+BMW plans to sell the i8 in about 50 countries, with the U.S. expected to be the largest sales market. In Europe, BMW expected the UK, Germany and France to be the top markets.[51] On November 14, 2013, BMW announced they are taking orders for the i8 in Japan. Pricing starts at ¥19,170,000 (US$191,500) which includes the 8% consumption tax.[52]
+Global deliveries to retail customers totaled 1,741 units in 2014,[15] and 5,456 in 2015,[16] totaling cumulative sales of 7,197 units worldwide through December 2015.[15][16] In 2015 global sales of the BMW i8 exceeded the combined figure of all other hybrid sports cars produced by other manufacturers.[50]
+As of December 2015, the United States is the leading market with 2,820 units delivered,[53][54] followed by the UK with 823 units registered by the end of June 2015,[55] and Germany with 793 units registered through December 2015.[56][57]
+Australia[edit]
+Deliveries in Australia for the i8 commenced in March 2015 priced at $299,000 AUD.[58] 50 local examples of the i8 are allocated for Australia, with 15 of those already accounted for.[59] Unlike international sales process where the i3 and i8 are sold at dedicated BMW i Stores, Australia has six dedicated dealers across the country that will be authorised to sell the i8. Dealerships include BMW Melbourne (Southbank), BMW Sydney (Rushcutters Bay), Brisbane BMW (Fortitude Valley), Perth Auto Classic (Victoria Park), Adelaide BMW (South Australian Capital) and Rolfe Classic (Phillip).[59]
+Service and repair facilities for the BMW i8 will be available at 11 authorised BMW dealers around Australia.
+India[edit]
+BMW introduced four variants of i8 in the Indian market in February 2015. This was the costliest offering from BMW in the country at a price of INR 2.29 Crore (Ex-Showroom)[60] The car is sold through exclusive BMW i dealerships established in the cities of Chennai, Delhi, and Mumbai.
+BMW i8 in Chennai
+China[edit]
+Pricing in China starts at CN¥1.988 million (~US$323,000).[61] Initially, sales of the BMW i brand vehicles are limited to seven dealerships in Beijing, Shanghai, Shenzhen and Shenyang. BMW expects combined sales of around 1,000 units for its i3 and i8 models through December 2014.[62]
+Europe[edit]
+A total of 60 units were delivered in Europe in June 2014, its first month in the market.[63] IHS Automotive predicts that just over 1,700 BMW i8s will be sold in Europe in 2015.[64]
+Germany
+The i8 was released in Germany in June 2014,[13] with pricing starting at €126,000 (~US$169,000).[65] As of December 2015, registrations totaled 793 units.[56][57]
+Switzerland
+Deliveries began in June 2014, and a total of 64 units were registered in 2014. Cumulative sales reached 117 units through June 2015.[66]
+United Kingdom
+Deliveries started in the UK in July 2014, with pricing starting at £99,845.[67] The BMW i8 is eligible for the government's £5,000 Plug-in Car Grant.[68] Two weeks after deliveries began, the i8 was sold out in the UK, and, by August 2014, there was a 10-month waiting list. The BMW i8 qualifies for exemption from the London congestion charge, which is one of the factors driving its demand.[64] By the end of February 2015 there was a 9-month waiting list.[69] A total of 823 units were registered by the end of June 2015.[55]
+United States[edit]
+BMW i8 production version exhibited at the 2014 New York International Auto Show.
+Pricing for the BMW i8 destined for the U.S. market starts at US$135,925 including destination and handling fees and before any applicable government incentives.[6] First deliveries to retail customers in the U.S. took place at the 2014 Pebble Beach Concours d'Elegance on August 15.[14] In order to commemorate the i8's American launch, a 2014 BMW i8 Concours d’Elegance Edition was auctioned during Gooding & Company’s annual Pebble Beach Auctions. This special edition car features BMW Individual Frozen Grey Metallic exterior paint, a Dalbergia Brown leather upholstery, trim accents in BMW i Blue, and other unique features. The car was sold for US$825,000 (€616,000 or £495,000) on August 16, 2014, six times the retail price of the i8. The proceedings go to the Pebble Beach Company Foundation.[70]
+Sales in 2015 reached 2,265 units, up 308.1% from 2014. Cumulative sales totaled 2,820 units through December 2015.[53][54]
+Awards and recognition[edit]
+In July 2012 the BMW i8 won the 2012 North American Concept Vehicle of the Year.[71] The BMW i8 Spyder won the 2013 Best Production Preview Vehicle award.[72] The i8 won AutoGuide's 2015 Reader’s Choice Green Car of the Year.[73] BMW’s i8 has been the winner of the coveted title ‘World Green car of the Year’ at Fame India Eco Drive 2015[74] It also was selected as Autoblog's 2014 Technology of the Year.[75] Top Gear Magazine awarded the i8 with their coveted Car of the Year award for 2014.[76] Green Car Journal awarded the BMW i8 with its 2015 Luxury Green Car of the Year.[77] The i8 won the UK Car of the Year 2015 and also UK Performance Car of the Year 2015.[69] The World Car of the Year organization declared the i8 as the winner of the 2015 World Green Car Award.[78]
+Marketing[edit]
+Louis Vuitton produced a series of carbon-black luggage for BMW i8, which included Weekender GM i8, Garment Bag i8, Business Case i8, Weekender PM i8. The luggage series went on sale in a selection of Louis Vuitton stores worldwide (Munich, Milan, London, Paris, Moscow, Dubai, New York, Los Angeles) starting April 1, 2014.[79]
 
-Air pollution causes global warming and acid rain. It results in increased temperatures, erratic rains and drought worldwide. This makes it difficult for the living organisms to survive.
-Water pollution is the presence of harmful materials in water, such as sewage, dissolved metals, waste from farms and factories and crude oil spilled from oil tankers. The three main substances that pollute water are nitrates from fertilizers, sewage and detergents
 
-Activities such as bathing and washing clothes near lakes, ponds or rivers add nutrients like nitrogen and phosphorous into the water bodies.This leads to excessive growth of algae on the surface of water. It blocks the penetration of sunlight and air, thus reducing oxygen.
+A eukaryote is any organism whose cells contain a nucleus and other organelles enclosed within membranes.
+Eukaryotes belong to the taxon Eukarya or Eukaryota. The defining feature that sets eukaryotic cells apart from prokaryotic cells (Bacteria and Archaea) is that they have membrane-bound organelles, especially the nucleus, which contains the genetic material, and is enclosed by the nuclear envelope.[2][3][4] The presence of a nucleus gives eukaryotes their name, which comes from the Greek εὖ (eu, "well") and κάρυον (karyon, "nut" or "kernel").[5] Eukaryotic cells also contain other membrane-bound organelles such as mitochondria and the Golgi apparatus. In addition, plants and algae contain chloroplasts. Eukaryotic organisms may be unicellular, or multicellular. Only eukaryotes have many kinds of tissue made up of different cell types.
+Eukaryotes can reproduce both by asexual reproduction through mitosis and sexual reproduction through meiosis. In mitosis, one cell divides to produce two genetically identical cells. In meiosis, DNA replication is followed by two rounds of cell division to produce four daughter cells each with half the number of chromosomes as the original parent cell (haploid cells). These act as sex cells (gametes – each gamete has just one complement of chromosomes, each a unique mix of the corresponding pair of parental chromosomes) resulting from genetic recombination during meiosis.
+The domain Eukaryota appears to be monophyletic, and so makes up one of the three domains of life. The two other domains, Bacteria and Archaea, are prokaryotes and have none of the above features. Eukaryotes represent a tiny minority of all living things;[6] even the cells in a human's body are outnumbered ten to one by bacteria in the gut.[7][8] However, due to their much larger size, eukaryotes' collective worldwide biomass is estimated at about equal to that of prokaryotes.[6] Eukaryotes first developed approximately 1.6–2.1 billion years ago.
+Contents  [hide]
+1	Cell features
+1.1	Internal membrane
+1.2	Mitochondria and plastids
+1.3	Cytoskeletal structures
+1.4	Cell wall
+2	Differences among eukaryotic cells
+2.1	Animal cell
+2.2	Plant cell
+2.3	Fungal cell
+2.4	Other eukaryotic cells
+3	Reproduction
+4	Classification
+4.1	Phylogeny
+4.1.1	Five supergroups
+4.1.2	Cavalier-Smith's tree
+4.1.3	Alternative views
+5	Origin of eukaryotes
+5.1	Fossils
+5.2	Relationship to Archaea
+5.3	Endomembrane system and mitochondria
+5.4	Hypotheses for the origin of eukaryotes
+5.4.1	Autogenous models
+5.4.2	Chimeric models
+6	See also
+7	References
+8	External links
+Cell features[edit]
 
-Pollution causes harm to organisms living in water and can also harm people's health. In extreme cases it may cause problems such as cancer.
-Noise pollution (also known as sound pollution) is noises in the environment that are harmful to humans and animals. When excessive noise is produced, it causes noise pollution. They include the sound of vehicles, loud speakers, etc. Noise pollution can cause ear problems or even permanent deafness, especially to older people.
-Soil pollution (also known as land pollution) is when man-made chemicals, such as hydrocarbons, heavy metals, solvents, get into the soil. These chemicals come from industrial activities and from bad waste disposal. Soil pollution may cause health risks. The chemicals can produce harmful vapors, or they can contaminate water supplies underneath the polluted soil.
-Plastic pollution is the accumulation of plastic products in the environment that adversely affects wildlife, wildlife habitat, or humans.
-A common cause of thermal pollution is the use of water as a coolant by power plants and industrial manufacturers. This puts back warm water, and so raises the temperature and decreases the oxygen content of the water.
+Detail of the endomembrane system and its components
+Eukaryotic cells are typically much larger than those of prokaryotes. They have a variety of internal membrane-bound structures, called organelles, and a cytoskeleton composed of microtubules, microfilaments, and intermediate filaments, which play an important role in defining the cell's organization and shape. Eukaryotic DNA is divided into several linear bundles called chromosomes, which are separated by a microtubular spindle during nuclear division.
+A 3D rendering of an animal cell cut in half.
+Internal membrane[edit]
+Eukaryote cells include a variety of membrane-bound structures, collectively referred to as the endomembrane system.[9] Simple compartments, called vesicles or vacuoles, can form by budding off other membranes. Many cells ingest food and other materials through a process of endocytosis, where the outer membrane invaginates and then pinches off to form a vesicle. It is probable that most other membrane-bound organelles are ultimately derived from such vesicles. Alternatively some products produced by the cell can leave in a vesicle through exocytosis.
+The nucleus is surrounded by a double membrane (commonly referred to as a nuclear envelope), with pores that allow material to move in and out. Various tube- and sheet-like extensions of the nuclear membrane form what is called the endoplasmic reticulum or ER, which is involved in protein transport and maturation. It includes the rough ER where ribosomes are attached to synthesize proteins, which enter the interior space or lumen. Subsequently, they generally enter vesicles, which bud off from the smooth ER. In most eukaryotes, these protein-carrying vesicles are released and further modified in stacks of flattened vesicles, called Golgi bodies or dictyosomes.
+Simplified structure of a mitochondrion
+Vesicles may be specialized for various purposes. For instance, lysosomes contain digestive enzymes that break down the contents of food vacuoles, and peroxisomes are used to break down peroxide, which is toxic otherwise. Many protozoa have contractile vacuoles, which collect and expel excess water, and extrusomes, which expel material used to deflect predators or capture prey. In higher plants, most of a cell's volume is taken up by a central vacuole, which primarily maintains its osmotic pressure.
+Mitochondria and plastids[edit]
+Mitochondria are organelles found in nearly all eukaryotes.They are the powerbank or powerhouse of the cell as they provide energy to the cell in the form of ATP.[10] They are surrounded by two membranes (each a phospholipid bi-layer), the inner of which is folded into invaginations called cristae, where aerobic respiration takes place. Mitochondria contain their own DNA. They are now generally held to have developed from endosymbiotic prokaryotes, probably proteobacteria. The few protozoa that lack mitochondria have been found to contain mitochondrion-derived organelles, such as hydrogenosomes and mitosomes; and thus probably lost the mitochondria secondarily.
+Plants and various groups of algae also have plastids. Plastids have their own DNA and are developed from endosymbionts, in this case cyanobacteria. They usually take the form of chloroplasts, which like cyanobacteria contain chlorophyll and produce organic compounds (such as glucose) through photosynthesis. Others are involved in storing food. Although plastids probably had a single origin, not all plastid-containing groups are closely related. Instead, some eukaryotes have obtained them from others through secondary endosymbiosis or ingestion.
+Endosymbiotic origins have also been proposed for the nucleus, for which see below, and for eukaryotic flagella, supposed to have developed from spirochaetes.[clarification needed] This is not generally accepted, both from a lack of cytological evidence and difficulty in reconciling this with cellular reproduction.
+Cytoskeletal structures[edit]
+Main article: Cytoskeleton
+Longitudinal section through the flagellum of Chlamydomonas reinhardtii
+Many eukaryotes have long slender motile cytoplasmic projections, called flagella, or similar structures called cilia. Flagella and cilia are sometimes referred to as undulipodia,[11] and are variously involved in movement, feeding, and sensation. They are composed mainly of tubulin. These are entirely distinct from prokaryotic flagellae. They are supported by a bundle of microtubules arising from a basal body, also called a kinetosome or centriole, characteristically arranged as nine doublets surrounding two singlets. Flagella also may have hairs, or mastigonemes, and scales connecting membranes and internal rods. Their interior is continuous with the cell's cytoplasm.
+Microfilamental structures composed of actin and actin binding proteins, e.g., α-actinin, fimbrin, filamin are present in submembraneous cortical layers and bundles, as well. Motor proteins of microtubules, e.g., dynein or kinesin and actin, e.g., myosins provide dynamic character of the network.
+Centrioles are often present even in cells and groups that do not have flagella, but conifers and flowering plants have neither. They generally occur in groups of one or two, called kinetids, that give rise to various microtubular roots. These form a primary component of the cytoskeletal structure, and are often assembled over the course of several cell divisions, with one flagellum retained from the parent and the other derived from it. Centrioles may also be associated in the formation of a spindle during nuclear division.
+The significance of cytoskeletal structures is underlined in the determination of shape of the cells, as well as their being essential components of migratory responses like chemotaxis and chemokinesis. Some protists have various other microtubule-supported organelles. These include the radiolaria and heliozoa, which produce axopodia used in flotation or to capture prey, and the haptophytes, which have a peculiar flagellum-like organelle called the haptonema.
+Cell wall[edit]
+Further information: Cell wall
+The cells of plants, fungi, and most chromalveolates have a cell wall, a layer outside the cell membrane, providing the cell with structural support,[citation needed] protection, and a filtering mechanism. The cell wall also prevents over-expansion when water enters the cell.
+The major polysaccharides making up the primary cell wall of land plants are cellulose, hemicellulose, and pectin. The cellulose microfibrils are linked via hemicellulosic tethers to form the cellulose-hemicellulose network, which is embedded in the pectin matrix. The most common hemicellulose in the primary cell wall is xyloglucan.
+Differences among eukaryotic cells[edit]
+There are many different types of eukaryotic cells, though animals and plants are the most familiar eukaryotes, and thus provide an excellent starting point for understanding eukaryotic structure. Fungi and many protists have some substantial differences, however.
+Animal cell[edit]
+Structure of a typical animal cell
+File:Célula animal.ogv
+3D Simulation of animal cell
+Structure of a typical plant cell
+An animal cell is a form of eukaryotic cell that makes up many tissues in animals. Animal cells are distinct from other eukaryotes, most notably plant cells, as they lack cell walls and chloroplasts. They also have smaller vacuoles. Due to the lack of a cell wall, animal cells can adopt a variety of shapes. A phagocytic cell can even engulf other structures.
+There are many different types of cell. For instance, there are approximately 210 distinct cell types in the adult human body.
+Plant cell[edit]
+Further information: Plant cell
+Plant cells are quite different from the cells of the other eukaryotic organisms. Their distinctive features are:
+A large central vacuole (enclosed by a membrane, the tonoplast), which maintains the cell's turgor and controls movement of molecules between the cytosol and sap[12]
+A primary cell wall containing cellulose, hemicellulose and pectin, deposited by the protoplast on the outside of the cell membrane; this contrasts with the cell walls of fungi, which contain chitin, and the cell envelopes of prokaryotes, in which peptidoglycans are the main structural molecules
+The plasmodesmata, linking pores in the cell wall that allow each plant cell to communicate with other adjacent cells;[13] this is different from the functionally analogous system of gap junctions between animal cells.
+Plastids, especially chloroplasts that contain chlorophyll, the pigment that gives plants their green color and allows them to perform photosynthesis
+Bryophytes and seedless vascular plants lack flagellae and centrioles except in the sperm cells.[14] Sperm of cycads and Ginkgo are large, complex cells that swim with hundreds to thousands of flagellae.[15]
+Conifers (Pinophyta) and flowering plants (Angiospermae) lack the flagellae and centrioles that are present in animal cells.
+Fungal cell[edit]
+Fungal Hyphae Cells
+1- Hyphal wall 2- Septum 3- Mitochondrion 4- Vacuole 5- Ergosterol crystal 6- Ribosome 7- Nucleus 8- Endoplasmic reticulum 9- Lipid body 10- Plasma membrane 11- Spitzenkörper 12- Golgi apparatus
+Fungal cells are most similar to animal cells, with the following exceptions:
+A cell wall that contains chitin
+Less definition between cells; the hyphae of higher fungi have porous partitions called septa, which allow the passage of cytoplasm, organelles, and, sometimes, nuclei. Primitive fungi have few or no septa, so each organism is essentially a giant multinucleate supercell; these fungi are described as coenocytic.
+Only the most primitive fungi, chytrids, have flagella.
+Other eukaryotic cells[edit]
+Eukaryotes are a very diverse group, and their cell structures are equally diverse. Many have cell walls; many do not. Many have chloroplasts, derived from primary, secondary, or even tertiary endosymbiosis; and many do not. Some groups have unique structures, such as the cyanelles of the glaucophytes, the haptonema of the haptophytes, or the ejectisomes of the cryptomonads. Other structures, such as pseudopods, are found in various eukaryote groups in different forms, such as the lobose amoebozoans or the reticulose foraminiferans.
+Reproduction[edit]
+This diagram illustrates the twofold cost of sex. If each individual were to contribute to the same number of offspring (two), (a) the sexual population remains the same size each generation, where the (b) asexual population doubles in size each generation.
+Cell division generally takes place asexually by mitosis, a process that allows each daughter nucleus to receive one copy of each chromosome. In most eukaryotes, there is also a process of sexual reproduction, typically involving an alternation between haploid generations, wherein only one copy of each chromosome is present, and diploid generations, wherein two copies of each chromosome are present, occurring through meiosis. There is considerable variation in this pattern.
+Eukaryotes have a smaller surface area to volume ratio than prokaryotes, and thus have lower metabolic rates and longer generation times. In some multicellular organisms, cells specialized for metabolism will have enlarged surface areas, such as intestinal vili.
+The evolution of sexual reproduction may be a primordial and fundamental characteristic of eukaryotes. Based on a phylogenetic analysis, Dacks and Roger proposed that facultative sex was present in the common ancestor of all eukaryotes.[16] A core set of genes that function in meiosis is present in both Trichomonas vaginalis and Giardia intestinalis, two organisms previously thought to be asexual.[17][18] Since these two species are descendants of lineages that diverged early from the eukaryotic evolutionary tree, it was inferred that core meiotic genes, and hence sex, were likely present in a common ancestor of all eukaryotes.[17][18] Other studies on eukaryotic species once thought to be asexual have revealed evidence for a sexual cycle. For instance, parasitic protozoa of the genus Leishmania have recently been shown to have a sexual cycle.[19] Also, evidence now indicates that amoeba, that were previously regarded as asexual, are anciently sexual and that the majority of present-day asexual groups likely arose recently and independently.[20]
+Classification[edit]
+Further information: wikispecies:Eukaryota
+Phylogenetic and symbiogenetic tree of living organisms, showing the origins of eukaryotes & prokaryotes
+One hypothesis of eukaryotic relationships. The Opisthokonta group includes both animals (Metazoa) and fungi. Plants (Plantae) are placed in Archaeplastida.
+In antiquity, the two clades of animals and plants were recognized. They were given the taxonomic rank of Kingdom by Linnaeus. Though he included the fungi with plants with some reservations, it was later realized that they are quite distinct and warrant a separate kingdom, the composition of which was not entirely clear until the 1980s.[21] The various single-cell eukaryotes were originally placed with plants or animals when they became known. In 1830, the German biologist Georg A. Goldfuss coined the word protozoa to refer to organisms such as ciliates, and this group was expanded until it encompassed all single-celled eukaryotes, and given their own kingdom, the Protista, by Ernst Haeckel in 1866.[22][23] The eukaryotes thus came to be composed of four kingdoms:
+Kingdom Protista
+Kingdom Plantae
+Kingdom Fungi
+Kingdom Animalia
+The protists were understood to be "primitive forms", and thus an evolutionary grade, united by their primitive unicellular nature.[23] The disentanglement of the deep splits in the tree of life only really got going with DNA sequencing, leading to a system of domains rather than kingdoms as top level rank being put forward by Carl Woese, uniting all the eukaryote kingdoms under the eukaryote domain.[24] At the same time, work on the protist tree intensified, and is still actively going on today. Several alternative classifications have been forwarded, though there is no consensus in the field.
+A classification produced in 2005 for the International Society of Protistologists,[25] which reflected the consensus of the time, divided the eukaryotes into six supposedly monophyletic 'supergroups'. However, in the same year (2005), doubts were expressed as to whether some of these supergroups were monophyletic, particularly the Chromalveolata,[26] and a review in 2006 noted the lack of evidence for several of the supposed six supergroups.[27] A revised classification in 2012[1] recognizes five supergroups.
+Archaeplastida (or Primoplantae)	Land plants, green algae, red algae, and glaucophytes
+SAR supergroup	Stramenopiles (brown algae, diatoms, etc.), Alveolata, and Rhizaria (Foraminifera, Radiolaria, and various other amoeboid protozoa).
+Excavata	Various flagellate protozoa
+Amoebozoa	Most lobose amoeboids and slime molds
+Opisthokonta	Animals, fungi, choanoflagellates, etc.
+There are also smaller groups of eukaryotes whose position is uncertain or seems to fall outside the major groups.[28] In particular, Haptophyta, Cryptophyta, Centrohelida, Telonemia, Picozoa,[29] Apusomonadida, Ancyromonadida, Breviatea, and the genus Collodictyon.[30] Overall, it seems that, although progress has been made, there are still very significant uncertainties in the evolutionary history and classification of eukaryotes. As Roger & Simpson said in 2009 "with the current pace of change in our understanding of the eukaryote tree of life, we should proceed with caution."[31]
+Phylogeny[edit]
+Life timeline
+Simple life
+Photosynthesis
+Eukaryotes
+Complex
+multicellular life
+Land animals
+Land plants
+"Dinosaurs"
+Mammals
+Flowers
+Earliest Earth (-4540)
+Earliest water
+Earliest life (-4100)
+Meteorite bombardment
+Earliest oxygen
+Atmospheric oxygen
+Great Oxygen Event
+Earliest sexual reproduction
+Ediacara biota
+Cambrian explosion
+Earliest humans
+Axis scale: Millions of years ago.
+also see {{Nature timeline}}
+The rRNA trees constructed during the 1980s and 1990s left most eukaryotes in an unresolved "crown" group (not technically a true crown), which was usually divided by the form of the mitochondrial cristae; see crown eukaryotes. The few groups that lack mitochondria branched separately, and so the absence was believed to be primitive; but this is now considered an artifact of long-branch attraction, and they are known to have lost them secondarily.[32][33]
+As of 2011, there is widespread agreement that the Rhizaria belong with the Stramenopiles and the Alveolata, in a clade dubbed the SAR supergroup, so that Rhizaria is not one of the main eukaryote groups; also that the Amoebozoa and Opisthokonta are each monophyletic and form a clade, often called the unikonts.[34][35][36][37][38] Beyond this, there does not appear to be a consensus.
+It has been estimated that there may be 75 distinct lineages of eukaryotes.[39] Most of these lineages are protists.
+The known eukaryote genome sizes vary from 8.2 megabases (Mb) in Babesia bovis to 112,000–220,050 Mb in the dinoflagellate Prorocentrum micans, suggesting that the genome of the ancestral eukaryote has undergone considerable variation during its evolution.[39] The last common ancestor of all eukaryotes is believed to have been a phagotrophic protist with a nucleus, at least one centriole and cilium, facultatively aerobic mitochondria, sex (meiosis and syngamy), a dormant cyst with a cell wall of chitin and/or cellulose and peroxisomes.[39] Later endosymbiosis led to the spread of plastids in some lineages.
+Five supergroups[edit]
+A global tree of eukaryotes from a consensus of phylogenetic evidence (in particular, phylogenomics), rare genomic signatures, and morphological characteristics is presented in Adl et al. 2012[1] and Burki 2014.[28]
+Eukaryotes
+Diaphoretickes
+Archaeplastida
+Glaucophyta
+Red Algae
+Green plants
+Cryptophyta
+Haptophyta
+SAR
+Stramenopiles
+Alveolata
+Rhizaria
+Excavata
+Amorphea
+Amoebozoa
+Apusozoa
+Opisthokonta
+Holomycota
+Holozoa
+In some analysis, the Hacrobia group (Haptophyta + Cryptophyta) is placed next to Archaeplastida,[34] but in another ones it is nested inside the Archaeplastida.[40] However, several recent studies have concluded that Haptophyta and Cryptophyta do not form a monophyletic group.[41] The former could be a sister group to the SAR group, the latter cluster with the Archaeplastida (plants in the broad sense).[42] As of February 2012, it remains unclear whether the Hacrobia forms a monophyletic group.[29]
+The division of the eukaryotes into two primary clades, bikonts (Archaeplastida + SAR + Excavata) and unikonts (Amoebozoa + Opisthokonta), derived from an ancestral biflagellar organism and an ancestral uniflagellar organism, respectively, had been suggested earlier.[40][43][44] A 2012 study produced a somewhat similar division, although noting that the terms "unikonts" and "bikonts" were not used in the original sense.[29]
+Cavalier-Smith's tree[edit]
+Cavalier-Smith 2010,[45] 2013,[46] and 2014[47] places the eukaryotic tree’s root between Excavata (with ventral feeding groove supported by a microtubular root) and the grooveless Euglenozoa:
+Eukaryotes
+Euglenozoa
+Excavata
+Corticata
+Plantae
+Chromista
+Podiates
+Amoebozoa
+Opisthokonta
+Alternative views[edit]
+Other analyses place the SAR supergroup within an expanded Chromalveolata, although they differ on the placement of the resulting five groups. Rogozin et al. in 2009 produced the tree shown below, where the primary division is between the Archaeplastida and all other eukaryotes.[48]
+Eukaryotes
+Archaeplastida
+Excavata (position uncertain)
+SAR
+Unikonts
+Amoebozoa
+Opisthokonta
+A paper published in 2009, which re-examined the data used in some of the analyses presented above as well as performing new ones, strongly suggested that the Archaeplastida are polyphyletic. The phylogeny finally proposed in the paper is shown below.[49]
+Eukaryotes
+Excavata
+Red algae
+Glaucophyta
+Green plants
+SAR
+Amoebozoa
+Opisthokonta
+There are also the cladistic analyses of Diana Lipscomb based on classical data [50][51][52] which have red algae as basal and Archeoplastida as paraphyletic. In the survey by Parfrey et al.[53] it is recovered in only 42.6% of the molecular analyses that include it, that is, 26 out of 61. It is not recovered in Goloboff et al.'s combined analysis,[54] and is mostly weakly supported in other molecular analyses.[55] Laura Parfrey et al.[55] point out that Archeoplastida support comes primarily from phylogenomic analyses and these may be picking up misleading endosymbiotic gene transfer signal of genes independently transferred from the plastid to the host nucleus in the 3 archeoplastid clades. And Stiller and Harrell [56] emphasize that the group can be explained by "short-branch exclusion" and "subtle and easily overlooked biases can dominate the overall results of molecular phylogenetic analyses of ancient eukaryotic relationships. Sources of potential phylogenetic artifact should be investigated routinely, not just when obvious 'long-branch attraction' is encountered."Red algae as basal is also supported by molecular evidence.[57][58][59][60] Cyanidioschyzon, a red alga, is considered basal (sister group to the rest of eukaryotes) by Nagashima et al.[61] and Seckbach.[62] It has the most primitive chloroplast, only 1 mitochondrion, no vacuoles, no trienoic acids, and the smallest eukaryotic genome at 8 Mbp.
+Rhizaria are only moderately supported (65.5% of the studies, i.e., 19 of 29),[55] statistical support for them is inconsistent in multigene genealogies with larger taxon sampling[63] and the group is ambiguously supported in Goloboff et al.[54]
+Origin of eukaryotes[edit]
+The three-domains tree and the Eocyte hypothesis.[64]
+Phylogenetic tree showing the relationship between the eukaryotes and other forms of life.[65] Eukaryotes are colored red, archaea green and bacteria blue.
+Fossils[edit]
+The origin of the eukaryotic cell is considered a milestone in the evolution of life, since eukaryotes include all complex cells and almost all multicellular organisms. The timing of this series of events is hard to determine; Knoll (2006) suggests they developed approximately 1.6–2.1 billion years ago. Some acritarchs are known from at least 1.65 billion years ago, and the possible alga Grypania has been found as far back as 2.1 billion years ago.[66] The Geosiphon-like fossil fungus Diskagma has been found in paleosols 2.2 billion years old [67]
+Organized living structures have been found in the black shales of the Palaeoproterozoic Francevillian B Formation in Gabon, dated at 2.1 billion years old. Eukaryotic life could have evolved at that time.[68] Fossils that are clearly related to modern groups start appearing an estimated 1.2 billion years ago, in the form of a red alga, though recent work suggests the existence of fossilized filamentous algae in the Vindhya basin dating back perhaps to 1.6 to 1.7 billion years ago.[69]
+Biomarkers suggest that at least stem eukaryotes arose even earlier. The presence of steranes in Australian shales indicates that eukaryotes were present in these rocks dated at 2.7 billion years old.[70][71]
+Relationship to Archaea[edit]
+Eukaryotes are more closely related to Archaea than Bacteria, at least in terms of nuclear DNA and genetic machinery, and one controversial idea is to place them with Archaea in the clade Neomura. However, in other respects, such as membrane composition, eukaryotes are similar to Bacteria. Three main explanations for this have been proposed:
+Eukaryotes resulted from the complete fusion of two or more cells, wherein the cytoplasm formed from a eubacterium, and the nucleus from an archaeon,[72] from a virus,[73][74] or from a pre-cell.[75][76]
+Eukaryotes developed from Archaea, and acquired their eubacterial characteristics from the proto-mitochondrion.
+Eukaryotes and Archaea developed separately from a modified eubacterium.
+The chronocyte hypothesis for the origin of the eukaryotic cell[77] postulates that a primitive eukaryotic cell was formed by the endosymbiosis of both archaea and bacteria by a third type of cell, termed a chronocyte.
+Endomembrane system and mitochondria[edit]
+The origins of the endomembrane system and mitochondria are also unclear.[78] The phagotrophic hypothesis proposes that eukaryotic-type membranes lacking a cell wall originated first, with the development of endocytosis, whereas mitochondria were acquired by ingestion as endosymbionts.[79] The syntrophic hypothesis proposes that the proto-eukaryote relied on the proto-mitochondrion for food, and so ultimately grew to surround it. Here the membranes originated after the engulfment of the mitochondrion, in part thanks to mitochondrial genes (the hydrogen hypothesis is one particular version).[80]
+In a study using genomes to construct supertrees, Pisani et al. (2007) suggest that, along with evidence that there was never a mitochondrion-less eukaryote, eukaryotes evolved from a syntrophy between an archaea closely related to Thermoplasmatales and an α-proteobacterium, likely a symbiosis driven by sulfur or hydrogen. The mitochondrion and its genome is a remnant of the α-proteobacterial endosymbiont.[81]
+Hypotheses for the origin of eukaryotes[edit]
+Different hypotheses have been proposed as to how eukaryotic cells came into existence. These hypotheses can be classified into two distinct classes – autogenous models and chimeric models.
+Autogenous models[edit]
+An autogenous model for the origin of eukaryotes.
+An autogenous model for the origin of eukaryotes.
+Autogenous models propose that a proto-eukaryotic cell containing a nucleus existed first, and later acquired mitochondria.[82] According to this model, a large prokaryote developed invaginations in its plasma membrane in order to obtain enough surface area to service its cytoplasmic volume. As the invaginations differentiated in function, some became separate compartments—giving rise to the endomembrane system, including the endoplasmic reticulum, golgi apparatus, nuclear membrane, and single membrane structures such as lysosomes.[83] Mitochondria are proposed to come from the endosymbiosis of an aerobic proteobacterium, and it's assumed that all the eukaryotic lineages that did not acquire mitochondria went extinct.[84] Chloroplasts came about from another endosymbiotic event involving cyanobacteria. Since all eukaryotes have mitochondria, but not all have chloroplasts, mitochondria are thought to have come first. This is the serial endosymbiosis theory.
+Some models propose that the origins of double layered organelles, such as mitochondria and chloroplasts, in the proto-eukaryotic cell is due to the compartmentalization of DNA vesicles that were formed from the secondary invaginations or more detailed infoldings of cellular membrane.[citation needed]
+Chimeric models[edit]
+Chimeric models claim that two prokaryotic cells existed initially – an archaeon and a bacterium. These cells underwent a merging process, either by a physical fusion or by endosymbiosis, thereby leading to the formation of a eukaryotic cell. Within these chimeric models, some studies further claim that mitochondria originated from a bacterial ancestor while others emphasize the role of endosymbiotic processes behind the origin of mitochondria.
+Based on the process of mutualistic symbiosis, the hypotheses can be categorized as – the serial endosymbiotic theory (SET),[85][86][87] the hydrogen hypothesis (mostly a process of symbiosis where hydrogen transfer takes place among different species),[88] and the syntrophy hypothesis.[89][90]
+According to serial endosymbiotic theory (championed by Dr. Lynn Margulis), a union between a motile anaerobic bacterium (like Spirochaeta) and a thermoacidophilic crenarchaeon (like Thermoplasma which is sulfidogenic in nature) gave rise to the present day eukaryotes. This union established a motile organism capable of living in the already existing acidic and sulfurous waters. Oxygen is known to cause toxicity to organisms that lack the required metabolic machinery. Thus, the archaeon provided the bacterium with a highly beneficial reduced environment (sulfur and sulfate were reduced to sulfide). In microaerophilic conditions, oxygen was reduced to water thereby creating a mutual benefit platform. The bacterium on the other hand, contributed the necessary fermentation products and electron acceptors along with its motility feature to the archaeon thereby gaining a swimming motility for the organism. From a consortium of bacterial and archaeal DNA originated the nuclear genome of eukaryotic cells. Spirochetes gave rise to the motile features of eukaryotic cells. Endosymbiotic unifications of the ancestors of alpha-proteobacteria and cyanobacteria, led to the origin of mitochondria and plastids respectively. For example, Thiodendron has been known to have originated via an ectosymbiotic process based on a similar syntrophy of sulfur existing between the two types of bacteria – Desulphobacter and Spirochaeta. However, such an association based on motile symbiosis have never been observed practically. Also there is no evidence of archaeans and spirochetes adapting to intense acid-based environments.[91]
+In the hydrogen hypothesis, the symbiotic linkage of an anaerobic and autotrophic methanogenic archaeon (host) with an alpha-proteobacterium (the symbiont) gave rise to the eukaryotes. The host utilized hydrogen (H2) and carbon dioxide (CO2) to produce methane while the symbiont, capable of aerobic respiration, expelled H2 and CO2 as byproducts of anaerobic fermentation process. The host's methanogenic environment worked as a sink for H2, which resulted in heightened bacterial fermentation. Endosymbiotic gene transfer (EGT) acted as a catalyst for the host to acquire the symbionts' carbohydrate metabolism and turn heterotrophic in nature. Subsequently, the host's methane forming capability was lost. Thus, the origins of the heterotrophic organelle (symbiont) are identical to the origins of the eukaryotic lineage. In this hypothesis, the presence of H2 represents the selective force that forged eukaryotes out of prokaryotes.
+The syntrophy hypothesis was developed in contrast to the hydrogen hypothesis and proposes the existence of two symbiotic events. According to this theory, eukaryogenesis (i.e. origin of eukaryotic cells) occurred based on metabolic symbiosis (syntrophy) between a methanogenic archaeon and a delta-proteobacterium. This syntrophic symbiosis was initially facilitated by H2 transfer between different species under anaerobic environments. In earlier stages, an alpha-proteobacterium became a member of this integration, and later developed into the mitochondrion. Gene transfer from a delta-proteobacterium to an archaeon led to the methanogenic archaeon developing into a nucleus. The archaeon constituted the genetic apparatus while the delta-proteobacterium contributed towards the cytoplasmic features. This theory incorporates two selective forces that were needed to be considered during the time of nucleus evolution – (a) presence of metabolic partitioning in order to avoid the harmful effects of the co-existence of anabolic and catabolic cellular pathways, and (b) prevention of abnormal biosynthesis of proteins that occur due to a vast spread of introns in the archaeal genes after acquiring the mitochondrion and the loss of methanogenesis.
+Thus, the origin of eukaryotes by endosymbiotic processes has been broadly recognized and accepted so far. Mitochondria and plastids have been known to originate from a bacterial ancestor during parallel adaptation to anaerobiosis. However, there still remains a greater need in assessing the question of how much eukaryotic complexity is being originated via an implementation of these symbiogenetic theories.
