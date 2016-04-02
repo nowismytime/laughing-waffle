@@ -1,5 +1,5 @@
 from py2neo import neo4j, Graph, Node, authenticate, Path, Relationship
-authenticate("localhost:7474", "neo4j", "10p13dd0053")
+authenticate("localhost:7474", "neo4j", "neo4j")
 graph = Graph()
 a = Node("Person", name="Alice")
 b = Node("Person", name="Bob")
