@@ -84,7 +84,7 @@ def svd(gmatrix):
     energy=0
     for index in range(len(s)):
         energy += s[index]*s[index]
-    energy *= 0.5
+    energy *= 0.8
     #print (energy)
     sum=0
     index = len(s)-1
@@ -119,7 +119,7 @@ with open("stopwords.txt") as f:
 # print(stopwords)
 
 # getting input file
-with open("ii.txt") as f:
+with open("input-text") as f:
     for line in f:
         words = nltk.word_tokenize(line)
         finalwords.extend(nltk.pos_tag(words))
