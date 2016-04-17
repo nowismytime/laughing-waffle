@@ -1,8 +1,7 @@
 import pprint
 import datetime
-from py2neo import authenticate
+from py2neo import authenticate, Node
 from py2neo.neo4j import Index
-#import wiki
 from wikitools import api
 from wikitools import wiki
 import py2neo.legacy.index
@@ -52,7 +51,6 @@ def WTree(name, visitedCategories=set(), dbcat=None):
     visitedCategories.add(name)
 
     cat = category.Category(site, "Category:"+name)
-
     if dbcat is None:
         dbcat = db_categories.get_or_create("name", name, {"name": name, "pageid": cat.pageid})
         dbcat.set_labels('Category')
@@ -60,6 +58,7 @@ def WTree(name, visitedCategories=set(), dbcat=None):
         dbcat["pageid"] = cat.pageid
 
     catlist = cat.getAllMembers(namespaces=[14], titleonly=True)
+
     # :type pagelist:list[Page]
     pagelist = cat.getAllMembers(namespaces=[0], titleonly=True)
 
@@ -84,7 +83,7 @@ def WTree(name, visitedCategories=set(), dbcat=None):
             # (try to find node first, if exists, just make a connection, if not, create it first
             db_page = db_pages.get("name", title)
             if not len(db_page):
-                db_page = db_pages.create("name", title, {"name": title})
+                db_page = db_pages.create("name", title, {"name": title, "is": "page"})
                 db_page.set_labels('Page')
             else:
                 db_page = db_page[0]
@@ -92,7 +91,7 @@ def WTree(name, visitedCategories=set(), dbcat=None):
 
             # db_page = db_pages.get_or_create("name", title, {"name": title})
             # db_page.set_labels('Page')
-            graph_db.create(rel(dbcat, "has", db_page))
+            graph_db.create(rel(dbcat, "has page", db_page))
 
         except Exception as ex:
             if ex is NoPage:
@@ -112,19 +111,20 @@ def WTree(name, visitedCategories=set(), dbcat=None):
         childcat = db_categories.get("name", catname)
         if not len(childcat):
             new = True
-            childcat = db_categories.create("name", catname, {"name": catname})
+            childcat = db_categories.create("name", catname, {"name": catname, "is": "category"})
             childcat.set_labels('Category')
         else:
             childcat = childcat[0]
 
         # link up to parent
-        graph_db.create(rel(dbcat, "has", childcat))
+        graph_db.create(rel(dbcat, "has category", childcat))
 
         # if existing AND already visited, skip
         # NOTE: in the future, might change to just not go into existing ones at all, but it might lead to lost data if run was never finished
-        if new is False and ('d' in childcat or catname in visitedCategories):
+        if new is False and ('d' in childcat or catname in visitedCategories ):
             continue
-
+        if len(visitedCategories)>2 :
+            continue
         #log(" - about to dive into subcategory '{}'".format(catname))
         WTree(catname, visitedCategories, childcat)
         childcat['d'] = datetime.datetime.now()
@@ -142,7 +142,7 @@ if __name__ == "__main__":
 
     CategoryTree = {}
 
-    cat = 'Machine learning'
+    cat = 'Geography'
 
     print("{} Started processing category '{}'".format(str(datetime.datetime.now()), cat))
 
@@ -151,3 +151,4 @@ if __name__ == "__main__":
     print("{} Finished processing category '{}'".format(str(datetime.datetime.now()), cat))
 
     pprint.pprint(CategoryTree)
+

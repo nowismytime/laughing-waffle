@@ -50,6 +50,7 @@ def WTree(name, visitedCategories=set(), dbcat=None):
     visitedCategories.add(name)
 
     cat = category.Category(site, "Category:"+name)
+    print(cat)
 
     if dbcat is None:
         dbcat = db_categories.get_or_create("name", name, {"name": name, "pageid": cat.pageid})
