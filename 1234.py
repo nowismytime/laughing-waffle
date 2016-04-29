@@ -6,7 +6,6 @@ import re
 from wikitools.page import NoPage, Page
 from py2neo import neo4j, node, rel
 import logging
-from nltk.tag.stanford import StanfordNERTagger as NER
 
 logging.basicConfig(level=logging.WARNING)
 authenticate("localhost:7474", "neo4j", "10p13dd0053")
