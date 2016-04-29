@@ -33,8 +33,9 @@ def WTree(name, visitedCategories=set(), dbcat=None):
     visitedCategories.add(name)
 
     cat = category.Category(site, "Category:"+name)
+    name1 = name.lower()
     if dbcat is None:
-        dbcat = db_categories.get_or_create("name", name, {"name": name, "pageid": cat.pageid})
+        dbcat = db_categories.get_or_create("name", name1, {"name": name1, "pageid": cat.pageid})
         dbcat.add_labels('Category')
     else:
         dbcat["pageid"] = cat.pageid
@@ -46,7 +47,7 @@ def WTree(name, visitedCategories=set(), dbcat=None):
         try:
 
             title = page.encode('ascii', 'ignore')
-
+            title = title.lower()
             db_page = db_pages.get("name", title)
             if not len(db_page):
                 db_page = db_pages.create("name", title, {"name": title, "is": "page"})
@@ -67,11 +68,13 @@ def WTree(name, visitedCategories=set(), dbcat=None):
     for catname in catlist:
         new = False
         catname = catname[9:]
+
         cat1= category.Category(site, "Category:"+catname)
         childcat = db_categories.get("name", catname)
+        catname1 = catname.lower()
         if not len(childcat):
             new = True
-            childcat = db_categories.create("name", catname, {"name": catname, "is": "category", "pageid": cat1.pageid})
+            childcat = db_categories.create("name", catname1, {"name": catname1, "is": "category", "pageid": cat1.pageid})
             childcat.add_labels('Category')
         else:
             childcat = childcat[0]

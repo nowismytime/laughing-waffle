@@ -6,8 +6,8 @@ graph_db = Graph()
 snode = raw_input("Enter origin page")
 enode = raw_input("Enter destination page")
 
-node1 = graph_db.legacy.get_indexed_node("Pages" ,"name" , snode)
-node2 = graph_db.legacy.get_indexed_node("Pages" ,"name" , enode)
+node1 = graph_db.legacy.get_indexed_node("Pages" ,"name" , snode.lower())
+node2 = graph_db.legacy.get_indexed_node("Pages" ,"name" , enode.lower())
 print(node1)
 print(node2)
 
