@@ -13,7 +13,6 @@ needless = re.compile(r' \(')
 site = wiki.Wiki("http://en.wikipedia.org/w/api.php")
 
 graph_db = neo4j.Graph("http://localhost:7474/db/data")
-graph_db.delete_all()
 
 db_categories = graph_db.legacy.get_or_create_index(neo4j.Node, "Categories")
 db_pages = graph_db.legacy.get_or_create_index(neo4j.Node, "Pages")
@@ -45,7 +44,6 @@ def WTree(name, visitedCategories=set(), dbcat=None):
 
     for page in pagelist:
         try:
-
             title = page.encode('ascii', 'ignore')
             title = title.lower()
             db_page = db_pages.get("name", title)
@@ -91,7 +89,7 @@ if __name__ == "__main__":
 
     CategoryTree = {}
 
-    cat = 'Main topic classifications'
+    cat = 'India'
 
     print("{} Started processing category '{}'".format(str(datetime.datetime.now()), cat))
 
