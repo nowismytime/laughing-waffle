@@ -47,10 +47,11 @@ def WTree(name, visitedCategories=set(), dbcat=None):
         try:
 
             title = page.encode('ascii', 'ignore')
-            title = title.lower()
+            page1 = Page(site, "Page:"+title)
+            title1 = title.lower()
             db_page = db_pages.get("name", title)
             if not len(db_page):
-                db_page = db_pages.create("name", title, {"name": title, "is": "page"})
+                db_page = db_pages.create("name", title, {"name": title1, "pageid": page1.pageid})
                 db_page.add_labels('Pages')
             else:
                 db_page = db_page[0]
@@ -82,7 +83,7 @@ def WTree(name, visitedCategories=set(), dbcat=None):
 
         if new is False and ('d' in childcat or catname in visitedCategories ):
             continue
-        if len(visitedCategories)>50:
+        if len(visitedCategories)>100:
             continue
 
         WTree(catname, visitedCategories, childcat)
@@ -92,7 +93,7 @@ if __name__ == "__main__":
 
     CategoryTree = {}
 
-    cat = 'Fictional characters'
+    cat = 'A Song of Ice and Fire characters'
 
     print("{} Started processing category '{}'".format(str(datetime.datetime.now()), cat))
 
